@@ -32,7 +32,7 @@ We converted the newly validated textual insights into machine-readable formats 
 To conclude the research pipeline, we developed a dedicated **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** to comprehensively host our project. This interactive repository documents our complete step-by-step methodology, displays the benchmarking outcomes, and serves as an open-science proof of concept for leveraging LLMs to enrich and update cultural heritage graphs.
 
 ---
-* <span style="color: red;">**What Role Do These Tools Play?**</span>
+### <span style="color: red;">What Role Do These Tools Play?</span>
 
 ## 🏛️ Cultural Knowledge Sources: ArCo & SPARQL Endpoints
 To establish a baseline for our project, we interacted extensively with national cultural heritage platforms:
