@@ -18,6 +18,41 @@ description: "Comparison of the Basilica of San Petronio and the Basilica of San
 * **[💎 RDF Triples](rdf.html)**
 * **[🏁 Conclusion](conclusion.html)**
 
----
 
-Qui inserisci l'introduzione della tua Home Page...
+```markdown
+# About the Project
+
+This project was carried out as part of the **KE4H (Knowledge Engineering for the Humanities)** course at the [University of Bologna](https://www.unibo.it/it). 
+
+Our research centers on the **Basilica di San Petronio di Bologna**, one of the city's most deeply significant landmarks and one of the largest churches in the world. Despite its immense historical, architectural, and cultural value, we discovered that this monumental basilica is only partially documented within **[ArCo](https://dati.beniculturali.it/arco/index.php)**, the official [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph) of Italian Cultural Heritage.
+
+The goal of our study was to analyze how the Basilica di San Petronio is modeled in ArCo, pinpoint any missing data or structural gaps, and propose semantic enhancements. To accomplish this, we integrated advanced **[SPARQL querying](https://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** to generate new RDF triples aligned with [ArCo's official ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl).
+
+Ultimately, this work investigates how AI-driven assistants can optimize the representation of cultural heritage within structured datasets, overcoming existing data gaps and making cultural knowledge more accessible.
+
+## Key Objectives
+
+* 🔍 **Analyze** the current representation of the Basilica di San Petronio within the ArCo dataset.
+* 📍 **Identify Gaps** in the existing data, such as missing geographical coordinates, architectural details, images, and metadata.
+* 🧠 **Experiment** with various LLM prompting techniques (including Zero-Shot, Few-Shot, and Chain-of-Thought) for accurate RDF generation.
+* 🛠️ **Enrich the Dataset** by producing valid RDF triples using AI-based assistants compliant with ArCo's schema.
+* 📊 **Evaluate** the effectiveness and impact of incorporating LLMs into knowledge engineering workflows for cultural heritage.
+
+## Tools Used
+
+* **[ArCo Ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl)& SPARQL Endpoint**(ttps://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** (Data retrieval & modeling)
+* **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation) & [Claude](https://claude.com/)
+* **[GitHub](https://github.com/)** (Project hosting & version control)
+
+## Our Team
+
+This project was collaboratively developed by:
+
+* 👩🏻 **Sofia Giorgetti**
+* 👩🏻 **Francesca Cianciosi**
+* 👩🏻 **Giulia Nestola**
+* 👩🏻 **Martina Fierli**
+
+* Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the University of Bologna.
+
+```
