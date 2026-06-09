@@ -39,7 +39,7 @@ Ultimately, this work investigates how AI-driven assistants can optimize the rep
 
 ## Tools Used
 
-* **[ArCo Ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl)& SPARQL Endpoint**(ttps://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** (Data retrieval & modeling)
+* **[ArCo Ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl)& [SPARQL Endpoint](https://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** (Data retrieval & modeling)
 * **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation) & [Claude](https://claude.com/)
 * **[GitHub](https://github.com/)** (Project hosting & version control)
 
