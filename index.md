@@ -19,7 +19,6 @@ description: "Comparison of the Basilica of San Petronio and the Basilica of San
 * **[🏁 Conclusion](conclusion.html)**
 
 
-```markdown
 # About the Project
 
 This project was carried out as part of the **KE4H (Knowledge Engineering for the Humanities)** course at the [University of Bologna](https://www.unibo.it/it). 
