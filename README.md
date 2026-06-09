@@ -1,3 +1,4 @@
+<img width="1620" height="1802" alt="El Pais_art EP 19-10-21 26" src="https://github.com/user-attachments/assets/38655e71-de57-40e0-b6c9-5b675fd7b5e0" />
 # Informatica7522 
 # Nome del Tuo Nuovo Progetto
 ## Un breve sottotitolo accattivante che descriva l'obiettivo della ricerca
@@ -18,7 +19,7 @@ Benvenuti nella pagina ufficiale del progetto. Questo spazio illustra l'integraz
 ---
 
 ## 🏠 Home
-Inserisci qui l'introduzione generale del tuo nuovo progetto. Puoi spiegare il contesto di partenza, i motivi che ti hanno spinto a fare questa ricerca e i principali obiettivi che intendi raggiungere.
+BARBAPAPA 
 
 ---
 
