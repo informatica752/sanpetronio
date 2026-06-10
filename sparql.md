@@ -45,8 +45,8 @@ WHERE {
 
 Let's break this query down into simple pieces:
 
-**1. SELECT DISTINCT ?site ?label**
-* **What it shows:** This tells the database to display only two columns in our final results: the link of the monument (?site) and its name (?label). The word DISTINCT makes sure we do not get the same result repeated.
+**1. `SELECT` `DISTINCT` `?site` `?label`**
+* **What it shows:** This tells the database to display only two columns in our final results: the link of the monument (`?site`) and its name (`?label`). The word `DISTINCT` makes sure we do not get the same result repeated.
 
 **2. ?site a cis:CulturalInstituteOrSite**
 * **Where it looks:** The letter "a" means "is a type of". This line forces the query to look only inside the category of real physical monuments and cultural sites, skipping unrelated artworks.
@@ -62,7 +62,6 @@ Let's break this query down into simple pieces:
 * **Why we do this:** It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
 
 <img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/ad4e3f3d-13ad-44b5-8e52-23a14bcbb014" />
-
 By doing this research we found the correct I[RI of Basilica di San petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
 
 ## 🔎 Step 2:Looking at All Basilicas in ArCo
