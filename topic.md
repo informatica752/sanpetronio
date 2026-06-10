@@ -37,7 +37,7 @@ Seeing this massive data gap is what motivated us to take action. This project i
 
 To visually contextualize the scale of this data disparity, the table below highlights the conceptual density of the current national linked data structure before our intervention:
 
-| Basilica Entity | Geographic Context | Presence in ArCo | Graph Density & Detail Level | Target Ontologies Connected |
+| Basilica Entity | Geographic Context | Presence in ArCo | Graph Density & Detail Level | 
 | :--- | :--- | :---: | :---: | :---: |
 | **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) | 
 | **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) | 
