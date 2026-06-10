@@ -90,7 +90,7 @@ ORDER BY ?entity ?property
 
 <img width="1915" height="856" alt="sparql basilica" src="https://github.com/user-attachments/assets/077a9451-581a-4ea3-b30d-5511798d0e77" />
 
-## Query Breakdown: How It Works
+### Query Breakdown: How It Works
 
 **1. `SELECT` `DISTINCT` `?entity` `?property` `?value`**
 
