@@ -3,8 +3,6 @@ layout: default
 title: 📂 Topic
 ---
 
-### 🌐 Navigation: [🏠 Home](index.html) | **📂 Topic** | [⚙️ Methodology](methodology.html) | [🔍 SPARQL](sparql.html) | [🤖 Prompts](prompts.html) | [💎 RDF](rdf.html) | [🏁 Conclusion](conclusion.html)
-
 # 📂 Topic & Research Domain
 
 ## 🏛️ General Characteristics of the Basilica di San Petronio
