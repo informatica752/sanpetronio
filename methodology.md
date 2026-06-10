@@ -30,7 +30,8 @@ Next, we translated our newly verified historical text into machine-readable dat
 To share our work with everyone, we built this **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** website. This platform hosts our entire step-by-step process, displays our comparison results, and serves as an open-science project to show how AI can help researchers enrich and update cultural heritage databases.
 
 ---
-### **What Role Do These Tools Play?**
+## **What Role Do These Tools Play?**
+
 
 ## 🏛️ Cultural Knowledge Sources: ArCo & SPARQL Endpoints
 To establish a baseline for our project, we interacted extensively with national cultural heritage platforms:
