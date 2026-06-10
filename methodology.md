@@ -3,8 +3,6 @@ layout: default
 title: ⚙️ Methodology
 ---
 
-### 🌐 Navigation: [🏠 Home](index.html) | [📂 Topic](topic.html) | **⚙️ Methodology** | [🔍 SPARQL](sparql.html) | [🤖 Prompts](prompts.html) | [💎 RDF](rdf.html) | [🏁 Conclusion](conclusion.html)
-
 * To systematically address the lack of data for San Petronio on ArCo, our group executed the following operational phases step by step: 
 
 ### 🌐 1. Target Landmark Selection & Pre-Analysis
