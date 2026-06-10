@@ -63,8 +63,8 @@ Let's break this query down into simple pieces:
   * It looks for the words "san petronio".
 * **Why we do this:** It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
 
-<img width="1637" height="716" alt="NUOVO S  PETRONIO" src="https://github.com/user-attachments/assets/cf7c317b-3202-41eb-b8c4-a090b0db7be7" />
-By doing this research we found the correct [IRI of Basilica di San petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
+<img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/2b27ea6e-a4e4-4571-bb16-266e23e16190" />
+By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
 
 ## 🔎 Step 2:Looking at All Basilicas in ArCo
 Our initial query revealed a surprising gap: despite its immense historical significance, San Petronio's digital record in ArCo was incredibly bare. This raised a crucial question: was this data scarcity a database-wide issue for all basilicas, or was it an omission unique to our monument?
