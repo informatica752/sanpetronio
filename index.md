@@ -2,10 +2,22 @@
 layout: default
 title: "Basilica di San Petronio"
 ---
+
+### Explore the Project
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; margin-bottom: 20px;">
+  <a href="index.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">🏠 Home</a>
+  <a href="topic.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">📂 Topic</a>
+  <a href="methodology.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">⚙️ Methodology</a>
+  <a href="sparql.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">🔍 SPARQL Queries</a>
+  <a href="prompt.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">💻 LLM Prompts</a>
+  <a href="rdf.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">🔗 RDF Triples</a>
+  <a href="conclusion.html" style="background-color: #f8f9fa; color: #0056b3; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; border: 1px solid #e1e4e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">🏁 Conclusion</a>
+</div>
+
 # Home
 
 <img width="1200" height="675" alt="Basilica-di-San-Petronio-1" src="https://github.com/user-attachments/assets/b3bea0e0-26aa-4bac-b197-509f297a8de7" />
-
 
 
 ### Explore the Project
