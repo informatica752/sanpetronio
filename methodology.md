@@ -5,32 +5,32 @@ title: ⚙️ Methodology
 
 **To systematically address the lack of data for San Petronio on ArCo, our group executed the following operational phases step by step:** 
 
-### 🌐 1. Target Landmark Selection & Pre-Analysis
-Our investigation centers on the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** in Bologna, an architectural masterpiece of immense cultural and historical value. The core purpose of this study was to critically evaluate its current digital preservation state, map its existing virtual documentation, and establish a methodology to upgrade its structural and historical record.
+### 🌐 1. Choosing the Subject & Initial Analysis
+Our project focuses on the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** in Bologna, an incredible historical and architectural masterpiece. Our main goal was to check how well this famous monument is preserved in digital archives, see what information was already available online, and find a way to enrich its digital records.
 
-### 🔍 2. Ontological Auditing via ArCo Endpoint
-To evaluate how effectively the basilica is represented within national [Linked Open Data](https://en.wikipedia.org/wiki/Linked_data), we performed an extensive digital audit by querying the official **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**. This step allowed us to investigate the depth, granularity, and accuracy of the semantic relationships and properties currently associated with San Petronio inside the Italian cultural heritage knowledge graph.
+### 🔍 2. Checking ArCo’s Database
+To see how San Petronio is represented in Italy's official cultural heritage data, we did a thorough check by querying the official **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**. This allowed us to explore exactly what information, details, and connections were already linked to the Basilica inside the national knowledge graph.
 
-### 📊 3. Comparative Benchmarking & Data Scarcity Mapping
-To objectively demonstrate that the digital documentation for San Petronio was severely lacking, we executed a comparative analysis against other prominent religious landmarks. By utilizing the exceptionally rich and detailed semantic records of the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as a benchmark, we highlighted the stark informative asymmetry and successfully mapped the specific data omissions of our primary subject.
+### 📊 3. Comparing Landmarks & Finding Data Gaps
+To get a clear picture of what was missing, we compared San Petronio's data with other major Italian churches. Since three of our team members are from Tuscany, we used the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as our main comparison point. While San Francesco had a beautiful, super-detailed network of connected data, San Petronio turned out to be almost completely empty, showing a huge difference in data quality.
 
-### 🕵️ 4. SPARQL-Driven Gap Confirmation
-We technically validated these preliminary observations by designing and running rigorous SPARQL counter-queries. This investigative process provided formal, machine-readable proof that vital historical metadata, chronological updates, and specific architectural interconnections for the Bolognese basilica were entirely absent from the [ArCo knowledge base](https://dati.beniculturali.it/arco/index.php).
+### 🕵️ 4. Confirming the Gaps with SPARQL
+We didn't just stop at our first impression; we proved it technically. By writing and running targeted **SPARQL queries**, we got concrete, machine-readable proof that vital pieces of information—like historical details, timeline updates, and specific architectural connections for San Petronio—were completely missing from ArCo.
 
-### 💡 5. Prompt-Engineered Knowledge Retrieval via LLMs
-To bridge these confirmed information gaps, we integrated [Generative AI](https://it.wikipedia.org/wiki/Intelligenza_artificiale_generativa)( into our research pipeline as an automated knowledge-sourcing partner. We engineered complex prompting frameworks—systematically testing *zero-shot*, *few-shot*, and *chain-of-thought (reasoning-path)* strategies—to extract precise, high-quality historical data from **[ChatGPT](https://chat.openai.com/)** and **[Gemini](https://gemini.google.com/?hl=it)**.
+### 💡 5. Using LLMs to Find Missing Data
+To fill these data gaps, we brought Generative AI into our workflow. We experimented with different prompting techniques (**Zero-Shot, Few-Shot, and Chain-of-Thought**) using **[ChatGPT](https://it.wikipedia.org/wiki/ChatGPT)and [Gemini AI](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico))**. This helped us guide the AI assistants to extract accurate, high-quality historical facts about the Basilica.
 
-### ⚖️ 6. Inter-Model Data Alignment & Quality Assurance
-The heterogeneous outputs generated by both [Large Language Models](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) were subjected to a strict cross-validation process. This rigorous quality control phase allowed us to identify and filter out potential AI hallucinations, cross-reference historical assertions with trusted literature, and synthesize the raw text into a cohesive, fully verified dataset.
+### ⚖️ 6. Fact-Checking & Quality Control
+Since AI models can sometimes make things up, we put the results from ChatGPT and Gemini through a strict cross-validation process. We double-checked all the historical facts against trusted academic sources, filtered out any mistakes or "hallucinations," and combined the best answers into one fully verified dataset.
 
-### 📚 7. Semantic Translation & Ontological Triplification
-We converted the newly validated textual insights into machine-readable formats compliant with Semantic Web standards. By aligning the new data with the specific ontological classes and properties defined by [ArCo](https://dati.beniculturali.it/arco/index.php)(, we successfully generated structured **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** serialization file, formally proposing a graph extension.
+### 📚 7. Writing the Code & Creating RDF Triples
+Next, we translated our newly verified historical text into machine-readable data for the Semantic Web. We mapped this information onto ArCo’s official structure to generate valid **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** file, creating a real, ready-to-use extension for the knowledge graph.
 
-### 🖥️ 8. Open-Science Web Deployment & Documentation
-To conclude the research pipeline, we developed a dedicated **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** to comprehensively host our project. This interactive repository documents our complete step-by-step methodology, displays the benchmarking outcomes, and serves as an open-science proof of concept for leveraging LLMs to enrich and update cultural heritage graphs.
+### 🖥️ 8. Launching the Web Platform on GitHub
+To share our work with everyone, we built this **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** website. This platform hosts our entire step-by-step process, displays our comparison results, and serves as an open-science project to show how AI can help researchers enrich and update cultural heritage databases.
 
 ---
-### <span style="color: red;">What Role Do These Tools Play?</span>
+### **What Role Do These Tools Play?**
 
 ## 🏛️ Cultural Knowledge Sources: ArCo & SPARQL Endpoints
 To establish a baseline for our project, we interacted extensively with national cultural heritage platforms:
