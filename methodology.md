@@ -46,8 +46,7 @@ As highlighted in our course materials, the fundamental building block of the [S
 
 Instead of organizing data in traditional relational tables or isolated text blocks, RDF models knowledge as a directed graph. Every piece of information is broken down into a formal **RDF Triple**:
 
-$$\text{Subject} \longrightarrow \text{Predicate} \longrightarrow \text{Object}$$
-
+**Subject** $\rightarrow$ **Predicate** $\rightarrow$ **Object**
 * **Subject:** The resource being described (represented by a unique URI, e.g., `ex:Basilica_San_Petronio`).
 * **Predicate:** The formal property or relationship (e.g., `ex:hasArchitect`).
 * **Object:** The value or another interconnected resource (e.g., `ex:Antonio_di_Vincenzo`).
