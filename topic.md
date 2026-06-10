@@ -37,13 +37,13 @@ Seeing this massive data gap is what motivated us to take action. This project i
 
 To visually contextualize the scale of this data disparity, the table below highlights the conceptual density of the current national linked data structure before our intervention:
 
-| Basilica Entity | Geographic Context | Presence in ArCo | Graph Density & Detail Level | 
-| :--- | :--- | :---: | :---: | :---: |
-| **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) | 
-| **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) | 
----
+| Basilica Entity | Geographic Context | Presence in ArCo | Graph Density & Detail Level |
+| :--- | :--- | :---: | :---: |
+| **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) |
+| **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) |
 
 By leveraging the deep relational structure of the Basilica di San Francesco as our structural blueprint, our methodology aims to extract, model, and inject the missing historical and architectural knowledge into a newly engineered, independent Knowledge Graph dedicated to San Petronio.
 
+---
 
 ### 🏠 [Torna alla Homepage](index.html)
