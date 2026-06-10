@@ -15,7 +15,7 @@ This section hosts the queries used to evaluate the digital footprint of the **B
 | :---: | :--- | :--- |
 | **01** | `DISTINCT` | **Cleans** ➔ Removes all duplicate rows from the final graph output. |
 | **02** | `SELECT` | **Specifies** ➔ the projection, i.e., the number and the order of the data to retrieve 
-| **03** | `WHERE` | **Imposes** ➔ constraints on the solution by means of graph patterns and/or boolean operations 
+| **03** | `WHERE` | **Constraints** ➔ imposes constraints on the solution by means of graph patterns and/or boolean operations 
 | **04** | `FILTER`    | **Restricts** ➔ Enforces explicit logical constraints, keeping only the resources that satisfy our search conditions. |
 | **05** | `REGEX`     | **Matches** ➔ Evaluates text strings using advanced pattern-matching, allowing for case-insensitive and flexible keyword searches. |
 | **06** | `OPTIONAL` | **Adapts** ➔ Fetches extra details safely, ignoring missing values. |
@@ -64,7 +64,7 @@ Let's break this query down into simple pieces:
 * **Why we do this:** It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
 
 <img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/ad4e3f3d-13ad-44b5-8e52-23a14bcbb014" />
-By doing this research we found the correct I[RI of Basilica di San petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
+By doing this research we found the correct [IRI of Basilica di San petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
 
 ## 🔎 Step 2:Looking at All Basilicas in ArCo
 Our initial query revealed a surprising gap: despite its immense historical significance, San Petronio's digital record in ArCo was incredibly bare. This raised a crucial question: was this data scarcity a database-wide issue for all basilicas, or was it an omission unique to our monument?
@@ -108,15 +108,15 @@ ORDER BY ?entity ?property
 
 **How it extracts:** This is our data-grabber. It tells the query to retrieve every single property and every single value connected directly to those cultural sites.
 
-**3. `FILTER(REGEX(?l, "basilica", "i"))`**
+**3. `FILTER`(`REGEX`(`?l`, "basilica", "`i`"))**
 
-**How it filters:** This searches for any monument where the name (?l) contains the word "basilica".
+**How it filters:** This searches for any monument where the name (`?l`) contains the word "basilica".
 
-**The "i" flag:** It ignores uppercase and lowercase letters completely, finding "Basilica", "basilica", or "BASILICA" automatically.
+**The "`i`" flag:** It ignores uppercase and lowercase letters completely, finding "Basilica", "basilica", or "BASILICA" automatically.
 
 **3. `ORDER BY` `?entity` `?property`**
 
-**How it organizes:** This sorts the final results table first by the monument name (`?entity`) and then by the type of relationship (?property).
+**How it organizes:** This sorts the final results table first by the monument name (`?entity`) and then by the type of relationship (`?property`).
 
 **Why this is useful:** It neatly groups all the properties of each single basilica together, making it incredibly easy for us to read and compare them!
 
@@ -143,7 +143,7 @@ WHERE {
 }
 ```
 ### Query Breakdown: How It Works
-**FILTER (REGEX(...) && REGEX(...))**
+**`FILTER` (`REGEX`(...) `&&` `REGEX`(...))**
 * **How it searches:** This is the core update of our query. It uses a double filter connected by the **`&&`** operator:
   * **The `&&` Operator:** This acts as a logical **AND**. It means that a result will only be shown if it matches **both** conditions at the same time.
   * **First Condition:** It searches for the words "san francesco".
