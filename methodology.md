@@ -3,7 +3,7 @@ layout: default
 title: ⚙️ Methodology
 ---
 
-* To systematically address the lack of data for San Petronio on ArCo, our group executed the following operational phases step by step: 
+**To systematically address the lack of data for San Petronio on ArCo, our group executed the following operational phases step by step:** 
 
 ### 🌐 1. Target Landmark Selection & Pre-Analysis
 Our investigation centers on the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** in Bologna, an architectural masterpiece of immense cultural and historical value. The core purpose of this study was to critically evaluate its current digital preservation state, map its existing virtual documentation, and establish a methodology to upgrade its structural and historical record.
