@@ -3,8 +3,6 @@ layout: default
 title: 🔍 SPARQL Queries
 ---
 
-### 🌐 Navigazione: [🏠 Home](index.html) | [📂 Topic](topic.html) | [⚙️ Metodologia](methodology.html) | **🔍 SPARQL** | [🤖 Prompts](prompts.html) | [💎 RDF](rdf.html) | [🏁 Conclusioni](conclusion.html)
-
 # 🔍 SPARQL Queries
 
 ---
