@@ -31,15 +31,15 @@ Before mapping any data extensions, it was essential to verify whether the **Bas
 To achieve this, we executed a discovery script filtering the graph for our target monument:
 
 ```sparql
-PREFIX cis: [http://dati.beniculturali.it/cis/](http://dati.beniculturali.it/cis/)
-PREFIX rdfs: [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?site ?label
 WHERE {
   ?site a cis:CulturalInstituteOrSite ;
         rdfs:label ?label .
 
-  FILTER(REGEX(LCASE(STR(?label)), "san petronio"))
+  FILTER(REGEX(LCASE(STR(?label)), "san petronio", "i"))
 }
 ```
 
@@ -56,12 +56,12 @@ Let's break this query down into simple pieces:
 **3. `rdfs:label` `?label`**
 * **What it matches:** This pulls the official text name or title of the monument from the database.
 
-**4. `FILTER`(`REGEX`(`LCASE(STR(?label`)), "san petronio"))**
+**4. `FILTER`(`REGEX`(`LCASE(STR(?label`)), "san petronio" "i"))**
 * **How it searches:** This is our search engine. It does three quick steps:
   * It turns the data into normal text.
   * It converts all letters to lowercase.
   * It looks for the words "san petronio".
-* **Why we do this:** It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
+* **Why we do this:** The `i` flag stands for "case-Insensitive". When passed as a parameter inside the `REGEX` function, it instructs the query engine as following: "Search for this specific word inside the text, and completely ignore whether it is written in uppercase, lowercase, or a mix of both." It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
 
 <img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/2b27ea6e-a4e4-4571-bb16-266e23e16190" />
 By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
