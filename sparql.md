@@ -68,6 +68,13 @@ Let's break this query down into simple pieces:
 <img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/2b27ea6e-a4e4-4571-bb16-266e23e16190" />
 By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first link on the list. 
 
+* **Results:** Only a limited amount of information about the Basilica is available on ArCo:
+* Name
+* Type
+* Location
+<img width="1878" height="518" alt="image" src="https://github.com/user-attachments/assets/7bf02789-ba95-435c-858e-a5802a7e995c" />
+ 
+
 ## 🔎 Step 2:Looking at All Basilicas in ArCo
 Our initial query revealed a surprising gap: despite its immense historical significance, San Petronio's digital record in ArCo was incredibly bare. This raised a crucial question: was this data scarcity a database-wide issue for all basilicas, or was it an omission unique to our monument?
 To answer this, we decided to investigate the general term "basilica" across the entire knowledge graph, extracting all connected properties to understand how this type of architecture is standardly cataloged.
@@ -172,4 +179,8 @@ By comparing the results of Query 2 and Query 3 with the first Query, we outline
 📍 Latitude and longitude
 📷 Official image
 
-## Step 4: Queries to double-check these gaps ArCo
+## Step 5: Queries to double-check these gaps ArCo
+In order to ensure the absence of such information on ArCo, we run some queries. 
+
+### Query 1:
+
