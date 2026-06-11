@@ -182,34 +182,52 @@ By comparing the results of Query 2 and Query 3 with the first Query, we outline
 In order to ensure the absence of such information on ArCo, we run some queries. 
 
 ### Query 1: Verifying the absence of a description📝
+Firslty, we executed a query to verify whether a formal textual description or historical overview of the Basilica di San Petronio exists within the knowledge graph:
 
 ```sparql
-PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX l0: <https://w3id.org/italia/onto/l0/>
+PREFIX arco: <https://w3id.org/arco/ontology/core/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-SELECT DISTINCT ?description
+SELECT DISTINCT ?property ?descriptionText ?descriptionLabel
 WHERE {
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
-        arco:description ?description .
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio>
+      l0:description ?descriptionText .
+    BIND("l0:description" AS ?property)
+    BIND("" AS ?descriptionLabel)
   }
   UNION
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
-        rdfs:comment ?description .
-  }
-  UNION
-  {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
-        dc:description ?description .
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio>
+      arco:hasDescription ?descResource .
+    BIND("arco:hasDescription" AS ?property)
+    ?descResource l0:description ?descriptionText .
+    OPTIONAL { ?descResource rdfs:label ?descriptionLabel }
   }
 }
-LIMIT 5
+ORDER BY ?property ?descriptionText
+LIMIT 10
 ```
+
+📝 Analysing the query:
+To prevent false negatives, the query scans different vocabularies simultaneously:
+
+
+* The use of `UNION` ensures that if any (or all) of these properties exist within the graph, the server returns the literal text bound to a single unified variable (`?description`), maximizing performance and avoiding database timeouts
+he query systematically audits the graph for textual metadata related to the Basilica using two distinct semantic pathways:
+
+* Direct Attachment (`l0:description`): checks if a text block is directly attached to the main monument resource using the national OntoPiA base vocabulary.
+* Indirect Modeling (`arco:hasDescription`): analyses graph to see if the text is encapsulated within a complex, intermediate description resource (`?descResource`). If found, it extracts both its inner `l0:description` text and any metadata tag through an `OPTIONAL { ?descResource rdfs:label ... }` clause.
+
+* The variable Binding (`BIND`) dynamically generates tracking flags (`?property` and `?descriptionLabel`) to explicitly identify which pattern successfully retrieved the data.
+
+📊 Results:
+❌ Empty Table
+It confirms the absence of any description 
+
 ### Query 2: Verifying the absence of the wikidata link🔗
-We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio.
-🔍 Query:
+We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio:
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -232,7 +250,7 @@ WHERE {
 Despite being one of Italy's major heritage sites, the Basilica di San Petronio exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
 
 ### Query 3: Verifying the absence of geographical coordinates (latitude and longitude)📍
-We executed a query to verify whether ArCo explicitly integrates geospatial positioning data within the semantic profile of the Basilica di San Petronio (such data are present for example in the profile of Basilica di San Francesco).
+We executed a query to verify whether ArCo explicitly integrates geospatial positioning data within the semantic profile of the Basilica di San Petronio (such data are present for example in the profile of Basilica di San Francesco):
 
 ```sparql
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
@@ -256,7 +274,7 @@ LIMIT 5
 This confirms that ArCo lacks both the direct coordinate triples and the formal `clvapit:Geometry` instances for the Basilica di San Petronio.
 
 ### Query 4: Verifying the absence of an official depiction📷
-We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the Basilica di San Petronio in Bologna.
+We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the Basilica di San Petronio in Bologna:
 
 ```sparql
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -286,9 +304,7 @@ LIMIT 10
 To maximize the efficiency of this check, the query implements a `UNION` pattern, cross-referencing three distinct semantic pathways where an image asset might be nested:
 
 * `foaf:depiction`: The cross-domain standard predicate used to link a conceptual resource to its visual representation.
-
 * `arco:image`: A specific core property within the ArCo ontology tailored for binding cultural properties directly to their photographic documentation.
-
 * `arco:hasDigitalRepresentation`: A broader ontological property designed to connect physical monuments with their web-accessible digital twins or files.
 
 📊 Results:
