@@ -207,3 +207,44 @@ WHERE {
 ❌ Empty Dataset
 
 Despite being one of Italy's major heritage sites, the Basilica di San Petronio exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
+
+### Query 4: Verifying the absence of an official depiction
+We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the Basilica di San Petronio in Bologna.
+
+```sparql
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?image
+WHERE {
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        foaf:depiction ?image .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        arco:image ?image .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        arco:hasDigitalRepresentation ?image .
+  }
+}
+LIMIT 10
+```
+
+📝 Analysing the query:
+To maximize the efficiency of this check, the query implements a `UNION` pattern, cross-referencing three distinct semantic pathways where an image asset might be nested:
+
+* `foaf:depiction`: The cross-domain standard predicate used to link a conceptual resource to its visual representation.
+
+* `arco:image`: A specific core property within the ArCo ontology tailored for binding cultural properties directly to their photographic documentation.
+
+* `arco:hasDigitalRepresentation`: A broader ontological property designed to connect physical monuments with their web-accessible digital twins or files.
+
+📊 Results:
+❌ Empty Table
+
+The official national graph lacks any direct link to an official image of the Basilica. 
