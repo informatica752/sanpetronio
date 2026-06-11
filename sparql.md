@@ -71,22 +71,25 @@ Our initial query revealed a surprising gap: despite its immense historical sign
 To answer this, we decided to investigate the general term "basilica" across the entire knowledge graph, extracting all connected properties to understand how this type of architecture is standardly cataloged.
 
 ```sparql
-PREFIX rdf: [http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns#)
-PREFIX rdfs: [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)
-PREFIX arco: [https://w3id.org/arco/ontology/arco/](https://w3id.org/arco/ontology/arco/)
-PREFIX a-cd: [https://w3id.org/arco/ontology/context-description/](https://w3id.org/arco/ontology/context-description/)
-PREFIX cis: [http://dati.beniculturali.it/cis/](http://dati.beniculturali.it/cis/)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX cis: <http://dati.beniculturali.it/cis/>
 
 SELECT DISTINCT ?entity ?property ?value
 WHERE {
   ?entity a cis:CulturalInstituteOrSite ;
           rdfs:label ?l ;
-          ?property ?value .
-
-  FILTER(REGEX(?l, "basilica", "i"))
+          ?property ?value . 
+  
+  # Il filtro applicato direttamente sulla variabile del label (?l)
+  FILTER (regex(str(?l), "basilica", "i"))
 }
 ORDER BY ?entity ?property
+LIMIT 100
 ```
+By applying the `FILTER` directly to the label `l`, and by limiting the results to 100, we managed to restrict the range of results, which otherwise would have been gigantic.
 
 <img width="1915" height="856" alt="sparql basilica" src="https://github.com/user-attachments/assets/077a9451-581a-4ea3-b30d-5511798d0e77" />
 
