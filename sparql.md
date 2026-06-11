@@ -139,7 +139,6 @@ WHERE {
   ?site a cis:CulturalInstituteOrSite ;
         rdfs:label ?label .
   
-  # Filtri concatenati e ottimizzati senza LCASE
   FILTER (
     regex(str(?label), "san francesco", "i") &&
     regex(str(?label), "arezzo", "i")
