@@ -81,9 +81,8 @@ SELECT DISTINCT ?entity ?property ?value
 WHERE {
   ?entity a cis:CulturalInstituteOrSite ;
           rdfs:label ?l ;
-          ?property ?value . 
-  
-  # Il filtro applicato direttamente sulla variabile del label (?l)
+          ?property ?value .
+
   FILTER (regex(str(?l), "basilica", "i"))
 }
 ORDER BY ?entity ?property
