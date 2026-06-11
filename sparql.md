@@ -160,4 +160,16 @@ LIMIT 100
 By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
  [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560) 
 
+## Step 4: Comparing results: gaps identified
+By comparing the results of Query 2 and Query 3 with the first Query, we outlined (numero) gaps that should be added to enrich Basilica di San Petronio:
 
+👷‍♂️ The architects
+🎭 Events and performances hosted by the theatre
+🛠️ Restorations and interventions
+🏛️ Typology of architecture
+🔗 Wikidata link
+📝 Description
+📍 Latitude and longitude
+📷 Official image
+
+## Step 4: Queries to double-check these gaps ArCo
