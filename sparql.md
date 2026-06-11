@@ -170,17 +170,40 @@ By comparison, the documentation was significantly more detailed than the data a
 ## Step 4: Comparing results: gaps identified
 By comparing the results of Query 2 and Query 3 with the first Query, we outlined (numero) gaps that should be added to enrich Basilica di San Petronio:
 
-👷‍♂️ The architects
-🎭 Events and performances hosted by the theatre
-🛠️ Restorations and interventions
-🏛️ Typology of architecture
-🔗 Wikidata link
 📝 Description
-📍 Latitude and longitude
+🔗 Wikidata link
+📍 Geographical coordinates 
 📷 Official image
+🎟️ Entrance ticket
+⛔ Access Conditions
+📞 Contact 
 
 ## Step 5: Queries to double-check these gaps ArCo
 In order to ensure the absence of such information on ArCo, we run some queries. 
 
 ### Query 1:
 
+
+### Query 2: Verifying the absence of the wikidata link
+We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio.
+🔍 Query:
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?p ?o
+WHERE {
+  <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> ?p ?o .
+  FILTER (STRSTARTS(STR(?o), "https://www.wikidata.org/entity/") || STRSTARTS(STR(?o), "https://www.wikidata.org/wiki/"))
+}
+```
+📝 Analysing the query:
+
+* Subject Target: The query isolates the unique URI assigned by ArCo to the Basilica (...`/basilica-di-san-petronio`) as the main subject of our search.
+* String-Pattern Matching: Instead of scanning all properties, the `FILTER` block utilizes the `STRSTARTS` function. This evaluates the string format of every object (`?o`) to check if it points to either a Wikidata structured entity (`/entity/`) or a standard Wikipedia/Wikidata web page (`/wiki/`).
+
+📊 Results:
+❌ Empty Dataset
+
+Despite being one of Italy's major heritage sites, the Basilica di San Petronio exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
