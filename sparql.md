@@ -222,6 +222,7 @@ To prevent false negatives, the query scans different vocabularies simultaneousl
 
 📊 Results:
 ❌ Empty Table
+
 It confirms the absence of any description.
 
 ### Query 2: Verifying the absence of the wikidata link🔗
