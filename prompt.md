@@ -28,7 +28,7 @@ This consists of providing the models with **one or more concrete examples** (in
 ### 3. 🧠 Chain-of-Thought (CoT)
 This technique forces the models to **break down a complex problem and "think aloud"**, displaying intermediate logical steps before delivering the final answer.
 * **Best for:** Complex reasoning or analyzing multi-variable rules and pricing sheets.
-* 
+
 ---
 
 ## 📊 Prompt Strategy Overview
@@ -41,7 +41,7 @@ The table below summarizes the exact prompting strategy used for each missing da
 | **2. 🔗 Wikidata link** | `Zero-Shot` | Direct extraction of the unique knowledge-graph URL from the models' database. |
 | **3. 📍 Coordinates** | `Zero-Shot` | Straightforward retrieval of numerical values (Lat, Lon) for the locations. |
 | **4. 📷 Official image** | `Few-Shot` | Ensures the model follows the exact syntax and domain pattern required for media assets. |
-| **5. 🎟️ Entrance ticket**| `Chain-of-Thought` | Step-by-step analysis of standard rates, concessions, and free entry criteria. |
+| **5. 🎟️ Entrance ticket** | `Chain-of-Thought` | Step-by-step analysis of standard rates, concessions, and free entry criteria. |
 | **7. 📞 Contact** | `Zero-Shot` | Quick and direct extraction of available telephone numbers and email addresses. |
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
@@ -53,10 +53,9 @@ Providing a description that fits highly specialized academic standards can be d
 ### Prompt Used 
 
 Please provide a description of the Basilica of San Petronio in Bologna, Italy, matching the style of the following example found on ArCo: 
-"The Gothic basilica of San Francesco, rich in frescoed testimonies of fourteenth-century Aretine painting, welcomes one of the greatest masterpieces of the Renaissance, the 'Legend of the True Cross' by Piero della Francesca, the extraordinary cycle painted by the artist between around 1452 and 1455 in the Bacci Chapel. The luminous stories of Piero della Francesca, restored to their splendor in 2000 after a long restoration process, represent an essential destination for anyone who considers Renaissance civilization one of the greatest achievements of the human spirit. The new lighting, created thanks to the Light is Back project by iGuzzini, enhances Piero della Francesca's 'painting of light', all its crystalline legibility, forms, space, and color. The cycle illustrates some of the stories from the 13th-century 'Golden Legend' by Jacopo da Varagine, an iconographic source on which many depictions by Tuscan and Italian artists from the fourteenth century onwards are based. Scene after scene, it narrates the history of the wood of Christ's Cross, from the seed of the tree placed in the mouth of the dying Adam to the recapture of the Cross from the hands of Chosroes by Emperor Heraclius and his final entry into Jerusalem. Set against landscapes dear to the artist and painted architecture—Arezzo itself perched on the hill and Sansepolcro with its buildings in perspective—elegant and geometrically perfect figures accompany the observer through the narrative and history. In the basilica, particular emphasis is given not only to the stained glass windows by Guglielmo de Marcillat, but also to the Tarlati Chapel with the Annunciation attributed to Matteo Lappoli, the large wooden Crucifix on the high altar attributed to the Master of San Francesco, the frescoes by Spinello Aretino, other valuable works, and the recently restored funeral monument of Francesco Roselli."
+"The Gothic basilica of San Francesco, rich in frescoed testimonies of fourteenth-century Aretine painting, welcomes one of the greatest masterpieces of the Renaissance, the 'Legend of the True Cross' by Piero della Francesca, the extraordinary cycle painted by the artist between around 1452 and 1455 in the Bacci Chapel."
 
 Write the new description making sure it perfectly fits the institutional standards and style of the ArCo portal.
-
 
 ### LLM Outputs 
 
@@ -65,10 +64,8 @@ Below are the visual results obtained from the models, showing how they adapted 
 #### ChatGPT Response
 <img width="705" height="847" alt="description 5 " src="https://github.com/user-attachments/assets/04ee6cd2-7a4d-4ade-9756-f042d7f4eea2" />
 
-
 #### Gemini Response
 <img width="688" height="807" alt="description 6 " src="https://github.com/user-attachments/assets/4ed6deb2-8071-4272-aa1c-bb0a6098365d" />
-
 
 ✅ **LLMs comparison:**
 
@@ -79,10 +76,9 @@ Both models successfully abandoned their standard formatting to mimic the dense,
 
 **Overall** ⬇️:
 
-**ChatGPT**:captures the *spirit* of the academic prompt, focusing on high-level artistic concepts and historical themes across split paragraphs.
+**ChatGPT**: captures the *spirit* of the academic prompt, focusing on high-level artistic concepts and historical themes across split paragraphs.
 
-**Gemini**:captures the *exact template* of the institutional prompt, packing a massive amount of technical architectural facts, names, and precise dates into a direct imitation.
-
+**Gemini**: captures the *exact template* of the institutional prompt, packing a massive amount of technical architectural facts, names, and precise dates into a direct imitation.
 
 ## 🌐 2. Wikidata Page 
 
@@ -99,7 +95,6 @@ The visual evidence below displays whether the models confirmed or denied the pr
 #### ChatGPT Response
 
 <img width="683" height="662" alt="WIKIDATA  1" src="https://github.com/user-attachments/assets/0cf6977d-beec-4c0b-9ca1-bcdec1d1fd77" />
-
 
 #### Gemini Response
 
@@ -118,7 +113,6 @@ The visual evidence below displays whether the models confirmed or denied the pr
 
 **Gemini**: acts like a fast search assistant, giving a quick text summary with automatic background source links.
 
-
 ## 🌍 3. Geographical Coordinates
 
 Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
@@ -126,23 +120,22 @@ Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, wh
 The objective was to assess how precisely each model can retrieve and present geospatial data for a well-known landmark.
 
 ### Prompt Used 
-Could you please give me the exact latitide and longitude of the Basilica of San Petrionio (Bologna)?
+Could you please give me the exact latitude and longitude of the Basilica of San Petronio (Bologna)?
 
 🤖 **ChatGPT Response**
 
 <img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
 
-
 🤖 **Gemini Response**
 
 <img width="599" height="137" alt="image" src="https://github.com/user-attachments/assets/1a646310-252c-46e0-9c90-e06871b10ac8" />
-
 
 ✅ **LLM Comparison**
 
 ➡️ Both models successfully identified the correct geographical location of the Basilica of San Petronio in Bologna and provided highly similar coordinate values. However, minor differences were observed in numerical precision and formatting:
 
 **Gemini**: Presents coordinates in a slightly rounded format, prioritizing simplicity and readability over decimal granularity.
+
 **ChatGPT**: Provides coordinates with a higher level of decimal precision, reflecting a more exact numeric representation.
 
 **Overall** ⬇️:  
@@ -162,9 +155,9 @@ Example:
 An officially recognized image of the Duomo di Firenze is available on Wikimedia Commons.
 
 - URL: https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
-- Title: Florence Cathedral (Duomo).jpg:
-- Author: Kevin Poh;
-- Source:https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
+- Title: Florence Cathedral (Duomo).jpg
+- Author: Kevin Poh
+- Source: https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
 - License: https://creativecommons.org/licenses/by/2.0
 
 #### ChatGPT Response
@@ -175,13 +168,13 @@ An officially recognized image of the Duomo di Firenze is available on Wikimedia
 <img width="753" height="727" alt="image" src="https://github.com/user-attachments/assets/1fbd0b72-aad7-432b-b381-ae8141c02307" />
 <img width="766" height="520" alt="image" src="https://github.com/user-attachments/assets/fc50ec31-2e1d-4b99-ab52-cef3aa457d3a" />
 
-
 ✅ **LLM Comparison**
 
-➡️ The results highlight a key difference in how the models interpret the concept of an “official image”:
+➡️ The results highlight a key difference in how the models interpret the concept of an "official image":
 
 **ChatGPT**: Clearly states that no official image exists and provides multiple curated Wikimedia Commons alternatives with detailed metadata and licensing information.
-**Gemini**: Selects a single “primary” image without explicitly addressing the absence of an official designation, focusing instead on visual representativeness. Gemini's response contains a further inconsistency: the image it identifies as the primary representation of the basilica does not match the image displayed at the URL it provides.
+
+**Gemini**: Selects a single "primary" image without explicitly addressing the absence of an official designation, focusing instead on visual representativeness. Gemini's response contains a further inconsistency: the image it identifies as the primary representation of the basilica does not match the image displayed at the URL it provides.
 
 **Overall** ⬇️:
 
@@ -207,8 +200,7 @@ To ensure the answer is correct, think step-by-step and show your reasoning out 
 Finally, summarize the results using this format:
 - General Entry Status: [Free / Paid]
 - Special Areas & Prices: [List the areas and their specific costs]
-- Concessions/Free Entry: [Who gets a discount or enters for free] 
-
+- Concessions/Free Entry: [Who gets a discount or enters for free]
 
 ### LLM Outputs 
 
@@ -218,12 +210,9 @@ Below are the visual results obtained from the models showing their logical brea
 <img width="540" height="757" alt="entrance 1 " src="https://github.com/user-attachments/assets/55c2a32d-83b8-4ea5-97c0-a1510e471c2b" />
 <img width="528" height="862" alt="entrance 2 " src="https://github.com/user-attachments/assets/a5c6cf31-101d-4bf8-96c1-51c3f6a00780" />
 
-
-
 #### Gemini Response
 <img width="573" height="792" alt="entrance 3 " src="https://github.com/user-attachments/assets/754b85a5-d9f8-4be2-ad2e-133bf1e10d94" />
 <img width="503" height="458" alt="entrance 4 " src="https://github.com/user-attachments/assets/f3464a9b-b8a0-470f-8671-8fbdadb46455" />
-
 
 ✅ **LLMs comparison:**
 
@@ -238,8 +227,7 @@ Below are the visual results obtained from the models showing their logical brea
 
 **ChatGPT**: its approach is conversational, relies on historic travel-guide data, and misses precise micro-rules.
 
-**Gemini** : its approach is factual and rigorous, capturing policy updates and exact administrative group rules for data accuracy.
-
+**Gemini**: its approach is factual and rigorous, capturing policy updates and exact administrative group rules for data accuracy.
 
 ## 📞 7. Contacts
 
@@ -248,21 +236,17 @@ To find the official contact details, we used a **Zero-Shot** approach. We speci
 ### Prompt Used 
 Please find the official contact information for the Basilica of San Petronio in Bologna, Italy.
 
-Search for phone numbers, email addresses, and the official website. You must separate the phone numbers section from the email section so they are distinct and easy to copy. If there are multiple phone numbers or emails (for example, for both the tourist desk, the parish office, or bookings), please list them all.
+Search for phone numbers, email addresses, and the official website. You must separate the phone numbers section from the email section so they are distinct and easy to copy. If there are multiple phone numbers, list them all with labels describing what they're for (e.g., "General Info", "Booking", etc.).
 
-If a specific piece of information is missing, just write N/D. 
-
+If a specific piece of information is missing, just write N/D.
 
 ### LLM Outputs 
 
 Below are the visual results obtained from the models showing the direct information extraction and clean formatting required by our prompt.
 
-
 #### ChatGPT Response
 <img width="585" height="723" alt="CONTACTS 1 " src="https://github.com/user-attachments/assets/7ef54657-305f-40fa-b2bd-65e5a03a2969" />
 <img width="526" height="268" alt="CONTACT 2 " src="https://github.com/user-attachments/assets/02b7f368-5a8e-4cbb-afe3-5ecac7269459" />
-
-
 
 #### Gemini Response
 <img width="598" height="690" alt="CONTACT 3 " src="https://github.com/user-attachments/assets/43c931f5-9b0a-4e14-90e0-94125a89a095" />
@@ -271,17 +255,11 @@ Below are the visual results obtained from the models showing the direct informa
 
 ➡️ Both models found the main contact information and separated phone numbers from emails, but they chose a different level of detail:
 
-* **ChatGPT :** Digs deeper into internal offices. It finds specific contacts for researchers and historians, like the phone number and email for the Historical Archive, the Musical Archive email, and the Sacristy. It also adds a nice "quick copy" summary section.
-* **Gemini :** Focuses only on the main contacts used by standard tourists and group planners (general info and booking). It includes an official email address listed by the Archdiocese of Bologna (`BasilicaSanPetronio@alice.it`) but leaves out the specific archive departments.
+* **ChatGPT:** Digs deeper into internal offices. It finds specific contacts for researchers and historians, like the phone number and email for the Historical Archive, the Musical Archive email, and other niche department contacts.
+* **Gemini:** Focuses only on the main contacts used by standard tourists and group planners (general info and booking). It includes an official email address listed by the Archdiocese of Bologna (`basilicasanpetronio@archibo.it`).
 
 **Overall** ⬇️:
 
 **ChatGPT**: goes much deeper into internal details, finding specific contacts for advanced or niche requests (like archives).
 
 **Gemini**: keeps it simple for the general public, showing only the most important tourist lines and the official church registry email.
-
-
-
-
-
-
