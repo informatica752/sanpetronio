@@ -46,6 +46,42 @@ The table below summarizes the exact prompting strategy used for each missing da
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
 
+
+
+## 🏛️ 1. Basilica Description
+
+Describing a historic place like this can be tricky. Some AIs give generic answers, while others use words that are too technical. To test how well they could explain the history and art of the Basilica on their own, we used a **Zero-Shot prompt**. We simply asked the models to describe the monument without giving them any extra tips or examples, allowing us to see how well they perform naturally.
+
+### Prompt Used 
+
+Please provide a description of the Basilica of San Petronio in Bologna, Italy. 
+
+### LLM Outputs 
+
+Below are the visual results obtained from the models, showing how they naturally chose to structure and organize the historical and artistic information.
+
+#### ChatGPT Response
+<img width="718" height="847" alt="description 2 " src="https://github.com/user-attachments/assets/b003a643-2ecd-4ca3-b8c1-cf5df7133c90" />
+
+#### Gemini Response
+<img width="546" height="707" alt="description 3 " src="https://github.com/user-attachments/assets/1b10947d-1926-4df0-ac2d-65b6f42d6c6c" />
+
+✅ **LLMs comparison:**
+
+➡️ Both models provided a great overview of the Basilica, but they organized the information in very different ways:
+
+* **ChatGPT:** Writes the description like an essay. It uses traditional, flowing paragraphs to tell the story of the Basilica. It also automatically includes three real photographs to give a visual tour of the church.
+* **Gemini:** Chooses a highly structured layout. After a short introduction, it uses a bulleted list with bold key phrases (like **The Unfinished Facade** or **The Cassini Meridian Line**) to make the text quick and easy to scan.
+* **ChatGPT:** Focuses heavily on the art and cultural impact, highlighting details like Dante’s Inferno frescoes in the Cappella Bolognini and the mix of Gothic and Renaissance styles.
+* **Gemini:** Focuses on historical and administrative context, explaining *why* the church is unfinished (due to papal intervention) and how it served a unique civic role funded by the city rather than the bishops.
+
+**Overall** ⬇️:
+
+**ChatGPT**: acts like a traditional travel guide, blending text and images for a smooth, narrative reading experience.
+
+**Gemini**: acts like a modern database, breaking down the facts into clean, scannable bullet points for a quick overview.
+
+
 ## 🌍 3. Geographical Coordinates
 
 Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
