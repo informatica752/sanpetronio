@@ -46,14 +46,35 @@ The table below summarizes the exact prompting strategy used for each missing da
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
 
+## 🌍 1. Geographical Coordinates
+
+Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
+
+The objective was to assess how precisely each model can retrieve and present geospatial data for a well-known landmark.
+
+### Prompt Used 
+Could you please give me the exact latitide and longitude of the Basilica of San Petrionio (Bologna)?
+
+🤖 **ChatGPT Response**
+<img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
 
 
+🤖 **Gemini Response**
+<img width="599" height="137" alt="image" src="https://github.com/user-attachments/assets/1a646310-252c-46e0-9c90-e06871b10ac8" />
 
 
+✅ **LLM Comparison**
 
+➡️ Both models successfully identified the correct geographical location of the Basilica of San Petronio in Bologna and provided highly similar coordinate values. However, minor differences were observed in numerical precision and formatting:
 
+**Gemini**: Presents coordinates in a slightly rounded format, prioritizing simplicity and readability over decimal granularity.
+**ChatGPT**: Provides coordinates with a higher level of decimal precision, reflecting a more exact numeric representation.
 
+**Overall** ⬇️:  
 
+**ChatGPT:** emphasizes numerical precision and fine-grained coordinate representation, which may be useful for mapping or computational use cases requiring higher accuracy.
+
+**Gemini:** prioritizes clarity and compactness, offering coordinates in a more simplified format that remains fully usable for general navigation purposes.
 
 
 
