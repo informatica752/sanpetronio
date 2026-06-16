@@ -312,6 +312,29 @@ To maximize the efficiency of this check, the query implements a `UNION` pattern
 The official national graph lacks any direct link to an official image of the Basilica. 
 
 ### Query 5: Verifying the absence of information about an entrance ticket 🎟️
+Then we verified the presence of admission ticket information connected to the Basilica. 
+
+```sparql
+PREFIX potapit: <https://w3id.org/italia/onto/POT/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?ticket ?label ?price
+WHERE {
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
+      potapit:hasTicket ?ticket .
+  
+  OPTIONAL { ?ticket rdfs:label ?label . }
+  OPTIONAL { ?ticket potapit:hasPriceSpecification ?price . }
+}
+LIMIT 10
+```
+
+📝 Analysing the query:
+* Property Selection (`potapit:hasTicket`): This property comes from the POT-AP-IT (Prices, Offers, Tickets - Italian Application Profile) vocabulary, integrated into ArCo to model entry fees, ticket types, and access costs for cultural sites.
+* `OPTIONAL` Blocks: Instead of a rigid look-up, the query uses `OPTIONAL` patterns to retrieve any additional human-readable labels (`rdfs:label`) or specific price structures (`potapit:hasPriceSpecification`) attached to the ticket entity, preventing the query from failing if only the bare ticket relation exists.
+
+📊 Results:
+❌ Empty Table
 
 ### Query 6: Verifying the absence of information about access conditions⛔
 
