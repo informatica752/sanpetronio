@@ -344,11 +344,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?contactPoint ?contactType ?contactValue
 WHERE {
-  # Target-locking the specific URI for the Basilica requested by the user
   <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
       smapit:hasOnlineContactPoint ?contactPoint .
   
-  # Extracting fields directly from the targeted contact node
   OPTIONAL { ?contactPoint rdfs:label ?contactType . }
   OPTIONAL { ?contactPoint smapit:hasEmail ?contactValue . }
   OPTIONAL { ?contactPoint smapit:hasTelephone ?contactValue . }
