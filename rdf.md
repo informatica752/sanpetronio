@@ -28,7 +28,7 @@ The content that follows presents the **RDF triples** produced to complete the m
 
 #### Longitude generation
 
-Next, we asked Chat GPT to aplly the same approach to generate the longitude value (11.343126° E), changing only the predicate to geo:long.
+Next, we asked Chat GPT to aplly the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
@@ -58,7 +58,7 @@ We then requested the integration of both values into a single RDF description. 
 ```
 ### Final ArCo classification step
 
-Finally, we introduced the ArCo namespace prefix and manually added an explicit type declaration (a arco:CulturalInstituteOrSite) to semantically classify the resource within the ArCo ontology.
+Finally, we introduced the ArCo namespace prefix and manually added an explicit type declaration (`a arco:CulturalInstituteOrSite`) to semantically classify the resource within the ArCo ontology.
 
 This step enriches the RDF description by defining not only the coordinates but also the ontological nature of the entity.
 
