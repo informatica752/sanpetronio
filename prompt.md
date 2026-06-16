@@ -60,7 +60,8 @@ The table below summarizes the exact prompting strategy used for each missing da
 Finding out the price of admission tickets can be tricky because prices often change based on age groups, student discounts, or free entry rules. To make sure ChatGPT and Gemini didn't make mistakes, we used a **Chain-of-Thought (CoT)** prompt. This forced the models to reason step-by-step and look at all the different ticket options before giving us the final price.
 
 ### Prompt Used 
-|`Please find the entrance ticket information for the Basilica of San Petronio in Bologna, Italy.
+
+Please find the entrance ticket information for the Basilica of San Petronio in Bologna, Italy.
 
 To ensure the answer is correct, think step-by-step and show your reasoning out loud before giving the final summary:
 
@@ -72,7 +73,7 @@ To ensure the answer is correct, think step-by-step and show your reasoning out 
 Finally, summarize the results using this format:
 - General Entry Status: [Free / Paid]
 - Special Areas & Prices: [List the areas and their specific costs]
-- Concessions/Free Entry: [Who gets a discount or enters for free]`|
+- Concessions/Free Entry: [Who gets a discount or enters for free] 
 
 
 ### LLM Outputs 
@@ -80,13 +81,15 @@ Finally, summarize the results using this format:
 Below are the visual results obtained from the models showing their logical breakdown before compiling the required data layout:
 
 #### ChatGPT Response
-<img width="528" height="862" alt="entrance 2 " src="https://github.com/user-attachments/assets/a5c6cf31-101d-4bf8-96c1-51c3f6a00780" />
 <img width="540" height="757" alt="entrance 1 " src="https://github.com/user-attachments/assets/55c2a32d-83b8-4ea5-97c0-a1510e471c2b" />
+<img width="528" height="862" alt="entrance 2 " src="https://github.com/user-attachments/assets/a5c6cf31-101d-4bf8-96c1-51c3f6a00780" />
+
 
 
 #### Gemini Response
-<img width="503" height="458" alt="entrance 4 " src="https://github.com/user-attachments/assets/f3464a9b-b8a0-470f-8671-8fbdadb46455" />
 <img width="573" height="792" alt="entrance 3 " src="https://github.com/user-attachments/assets/754b85a5-d9f8-4be2-ad2e-133bf1e10d94" />
+<img width="503" height="458" alt="entrance 4 " src="https://github.com/user-attachments/assets/f3464a9b-b8a0-470f-8671-8fbdadb46455" />
+
 
 ✅ **LLMs comparison:**
 
@@ -106,21 +109,42 @@ Below are the visual results obtained from the models showing their logical brea
 
 ## 📞 7. Contacts
 
-To retrieve official contact information such as telephone numbers, email addresses, and official websites, we implemented a **Zero-Shot** approach. Since we needed a strict structural separation between phone contacts and email lists to facilitate seamless database integration, the prompt embedded formatting constraints directly into the natural language instructions.
+To find the official contact details, we used a **Zero-Shot** approach. We specifically designed the prompt to separate phone numbers from email addresses into distinct, clean sections. This layout was essential for us to easily read, copy, and organize the contact channels without mixing them up.
+
+### Prompt Used 
+Please find the official contact information for the Basilica of San Petronio in Bologna, Italy.
+
+Search for phone numbers, email addresses, and the official website. You must separate the phone numbers section from the email section so they are distinct and easy to copy. If there are multiple phone numbers or emails (for example, for both the tourist desk, the parish office, or bookings), please list them all.
+
+If a specific piece of information is missing, just write N/D. 
 
 
-### LLM Outputs & Validation
+### LLM Outputs 
 
-Both models successfully processed the request, cleanly partitioning the operational telephone channels from the digital mailing endpoints as shown below:
+Below are the visual results obtained from the models showing the direct information extraction and clean formatting required by our prompt.
+
 
 #### ChatGPT Response
-![ChatGPT Contacts Screen](path-to-your-image/chatgpt-contacts.png)
+<img width="585" height="723" alt="CONTACTS 1 " src="https://github.com/user-attachments/assets/7ef54657-305f-40fa-b2bd-65e5a03a2969" />
+<img width="526" height="268" alt="CONTACT 2 " src="https://github.com/user-attachments/assets/02b7f368-5a8e-4cbb-afe3-5ecac7269459" />
+
+
 
 #### Gemini Response
-![Gemini Contacts Screen](path-to-your-image/gemini-contacts.png)
+<img width="598" height="690" alt="CONTACT 3 " src="https://github.com/user-attachments/assets/43c931f5-9b0a-4e14-90e0-94125a89a095" />
 
+✅ **LLMs comparison:**
 
+➡️ Both models found the main contact information and separated phone numbers from emails, but they chose a different level of detail:
 
+* **ChatGPT :** Digs deeper into internal offices. It finds specific contacts for researchers and historians, like the phone number and email for the Historical Archive, the Musical Archive email, and the Sacristy. It also adds a nice "quick copy" summary section.
+* **Gemini :** Focuses only on the main contacts used by standard tourists and group planners (general info and booking). It includes an official email address listed by the Archdiocese of Bologna (`BasilicaSanPetronio@alice.it`) but leaves out the specific archive departments.
+
+**Overall** ⬇️:
+
+**ChatGPT**: goes much deeper into internal details, finding specific contacts for advanced or niche requests (like archives).
+
+**Gemini** keeps it simple for the general public, showing only the most important tourist lines and the official church registry email.
 
 
 
