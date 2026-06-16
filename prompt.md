@@ -55,6 +55,13 @@ The table below summarizes the exact prompting strategy used for each missing da
 
 
 
+
+
+
+
+
+
+
 ## 🎟️ 5. Entrance Ticket
 
 Finding out the price of admission tickets can be tricky because prices often change based on age groups, student discounts, or free entry rules. To make sure ChatGPT and Gemini didn't make mistakes, we used a **Chain-of-Thought (CoT)** prompt. This forced the models to reason step-by-step and look at all the different ticket options before giving us the final price.
