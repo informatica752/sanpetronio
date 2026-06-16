@@ -19,7 +19,8 @@ The content that follows presents the **RDF triples** produced to complete the m
 
 ### ➡️ ChatGPT output:
 
-```@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+```turtle
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:lat "44.29346" .
@@ -31,7 +32,8 @@ Next, we applied the same approach to generate the longitude value (11.343126° 
 
 ➡️ **Resulting RDF triple**:
 
-```@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+```turtle
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:long "11.343126" .
@@ -43,7 +45,8 @@ We then requested the integration of both values into a single RDF description. 
 
 ➡️ **Merged RDF representation**:
 
-```@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+```turtle
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:lat "44.29346" ;
@@ -57,7 +60,8 @@ This step enriches the RDF description by defining not only the coordinates but 
 
 ➡️ **Final RDF triple**:
 
-```@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+```turtle
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
