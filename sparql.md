@@ -287,7 +287,7 @@ WHERE {
   UNION
   {
     <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
-        arco:hasRepresentativeImage ?image .
+        arco:hasRepresentative ?image .
   }
   UNION
   {
