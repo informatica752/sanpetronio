@@ -34,8 +34,8 @@ During our work, we faced and resolved four main challenges related to data crea
 
 ## 📍 Final Reflections
 
-•	**The Importance of Benchmarking:** Comparing our work with the Basilica di San Francesco in Arezzo was essential to understand the correct structure of the ArCo ontology.
+•	**The Importance of Benchmarking:** Comparing our project on the Basilica di San Petronio with the Basilica di San Francesco in Arezzo was a fundamental step for our team. Because the ArCo ontology is complex and includes many different modules, it is easy to get lost when looking at a monument from scratch. By using this well-documented church as a guide, we could easily see what information was missing for our main topic. This strategy taught us that in semantic web projects, looking at how similar entities are already modeled is the best way to avoid mistakes and follow the correct standards.
 
-•	**Human-in-the-Loop** Our experience with image discrepancies and complex RDF triples proved that AI is a great assistant, but human supervision is necessary to correct errors and make methodological decisions.
+•	**Human-in-the-Loop** Our experience with Gemini and ChatGPT showed us both the power and the limitations of Large Language Models. AI was incredibly helpful for writing code quickly, but it cannot work completely alone in cultural heritage projects. When the models gave us conflicting images for the Basilica or made mistakes with complex data like tickets and contacts, we realized that human judgment is irreplaceable. We had to act as supervisors, checking every detail against official documents to make sure the final data was true, logical, and accurate.
 
-•	**Semantic Contribution:** The final RDF triples we produced in Turtle syntax successfully fill the gaps regarding the Basilica di San Petronio, making its digital documentation more complete.
+•	**Semantic Contribution:** Ultimately, the most rewarding part of this project was filling real data gaps for the Basilica di San Petronio. By generating precise RDF triples in Turtle syntax according to ArCo standards, we created structured data that is ready to be integrated into the semantic web. This contribution helps make digital cultural heritage more complete and accessible for everyone.
