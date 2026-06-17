@@ -17,12 +17,7 @@ The goal of this section is to produce structured semantic data designed to fill
 
 To find the most accurate and compliant data layout for ArCo's standards, we tested the model using three different prompting strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)**. 
 
----
-```turtle
-@prefix ex: [http://example.org/](http://example.org/) .
-```
-
-The content that follows presents the **RDF triples** produced to complete the missing elements identified earlier.
+The content that follows presents the **RDF triples** produced to complete the missing elements identified during the previous LLMs investigation.
 
 ## 1. RDF Triple for description
 
