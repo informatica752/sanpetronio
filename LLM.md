@@ -116,7 +116,7 @@ The visual evidence below displays whether the models confirmed or denied the pr
 
 ## 🌍 3. Geographical Coordinates
 
-Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
+Both Gemini and ChatGPT were evaluated using a **zero-shot prompting** technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
 
 The objective was to assess how precisely each model can retrieve and present geospatial data for a well-known landmark.
 
