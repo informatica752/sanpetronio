@@ -228,4 +228,8 @@ Result:
     sm:price "3 EUR per chapel" .
 ```
 
+The RDF triple was generated via ChatGPT using the following input data:
 
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `potapit:hasTicket` | all ticket information |
