@@ -1,10 +1,8 @@
 #### 🏁 Contenuto di `conclusion.md`
-```markdown
 ---
 layout: default
 title: 🏁 Conclusion
 ---
-```
 
 # Project Conclusion
 
