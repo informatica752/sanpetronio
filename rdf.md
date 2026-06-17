@@ -63,7 +63,7 @@ We gave ChatGPT the following information to generate the RDF triple:
 | :--- | :--- | :--- |
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `owl:sameAs` | <http://www.wikidata.org/entity/Q810103> |
 
-## 3. RDF Triples for Geographical Coordinates
+## 3. RDF Triples for Geographical Coordinates 📍
 
 📍 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
