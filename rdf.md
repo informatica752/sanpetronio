@@ -24,7 +24,7 @@ The content that follows presents the **RDF triples** produced to complete the m
 Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
  <img width="802" height="1248" alt="image" src="https://github.com/user-attachments/assets/ef8c6e62-43a8-43a9-8ede-0b0e9cd6097b" />
 
-Result:
+➡️ **Result:**
 ```turtle
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -47,7 +47,7 @@ We gave ChatGPT the following information to generate the RDF triple:
 Through a **zero-shot** prompt, ChatGPT generated the RDF triples to connect the Basilica with its relative wikidata link:
 <img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
 
-Result:
+➡️ **Result:**
 ```turtle
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -65,11 +65,11 @@ We gave ChatGPT the following information to generate the RDF triple:
 
 ## 3. RDF Triples for Geographical Coordinates 📍
 
-📍 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
+We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
 <img width="365" height="310" alt="image" src="https://github.com/user-attachments/assets/2f36bb30-12be-4e3a-bbcc-446a6c13ca18" />
 
-### ➡️ ChatGPT output:
+➡️ **Result:**
 
 We leveraged ChatGPT to transform the following details into an RDF triple:
 
@@ -92,7 +92,7 @@ Next, we asked Chat GPT to apply the same approach to generate the longitude val
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
-➡️ **Resulting RDF triple**:
+➡️ **Result:**
 
 The RDF triple was generated via ChatGPT using the following input data:
 
@@ -161,7 +161,7 @@ In order to interrogate Chat GPT we used the *zero shot prompting technique*
 
 <img width="420" height="211" alt="image" src="https://github.com/user-attachments/assets/6b8fd63a-2f09-4cbb-9bd5-287b7b64c5cc" />
 
-Chat GPT generated the following triple: 
+➡️ **Result:** 
 
 ```turtle
 @prefix arco: <https://w3id.org/arco/ontology/arco/> .
@@ -175,7 +175,7 @@ Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Trip
 
 <img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
 
-Result:
+➡️ **Result:**
 ```turtle
 @prefix potapit: <http://dati.beniculturali.it/lod/potapit/> .
 @prefix l0: <http://dati.beniculturali.it/lod/l0/> .
@@ -229,7 +229,7 @@ In order to add the missing information about contact details to the ArCo Knowle
 
 <img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
 
-Results: 
+➡️ **Result:**
 <img width="667" height="401" alt="image" src="https://github.com/user-attachments/assets/e49100e4-9513-4666-b2d2-35ce7c27cfa5" />
 
 ```turtle
