@@ -239,7 +239,7 @@ Below are the visual results obtained from the models showing their logical brea
 
 **Gemini**: its approach is factual and rigorous, capturing policy updates and exact administrative group rules for data accuracy.
 
-## 📞 7. Contacts
+## 📞 6. Contacts
 
 To find the official contact details, we used a **Zero-Shot** approach. We specifically designed the prompt to separate phone numbers from email addresses into distinct, clean sections. This layout was essential for us to easily read, copy, and organize the contact channels without mixing them up.
 
