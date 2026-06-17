@@ -71,20 +71,17 @@ We prompted ChatGPT to generate an RDF triple for the latitude using a **few-sho
 
 ➡️ **Result:**
 
-We leveraged ChatGPT to transform the following details into an RDF triple:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:lat` | 44.29346 |
-
-----
 ```turtle
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:lat "44.29346" .
 ```
----
+We leveraged ChatGPT to transform the following details into an RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:lat` | 44.29346 |
 
 #### Longitude generation
 
@@ -94,20 +91,17 @@ Next, we asked Chat GPT to apply the same approach to generate the longitude val
 
 ➡️ **Result:**
 
-The RDF triple was generated via ChatGPT using the following input data:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:long` | 11.343126 |
-
-
-
 ```turtle
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:long "11.343126" .
 ```
+The RDF triple was generated via ChatGPT using the following input data:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:long` | 11.343126 |
 
 #### Merging latitude and longitude
 
