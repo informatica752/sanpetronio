@@ -5,6 +5,17 @@ title: 💎 RDF Triples
 
 # 💎 RDF Triples
 
+### What are RDF Triples used for?
+In the traditional web, pages are linked together, but computers don't understand what the text inside them actually means. **RDF Triples solve this problem by giving meaning to data.** They allow search engines, AI models, and applications to automatically connect different pieces of information, cross-reference data from different websites (like linking Wikipedia with museum archives), and run complex smart searches instead of just looking for simple keywords.
+
+### How they work
+To do this, RDF Triples connect information using a basic three-word formula: **Subject --> Predicate --> Object** 
+
+### Our Test
+To see how well the models could transform regular text into this machine-readable format, we tested them using three different strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)** prompts. This approach allowed us to analyze the performance gap between the models, showing how they improve when moving from a direct request to a guided example, and finally to a step-by-step reasoning process.
+
+
+
 ```turtle
 @prefix ex: [http://example.org/](http://example.org/) .
 ```
