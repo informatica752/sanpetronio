@@ -1,4 +1,3 @@
-#### 🏁 Contenuto di `conclusion.md`
 ---
 layout: default
 title: 🏁 Conclusion
