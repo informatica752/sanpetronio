@@ -42,7 +42,7 @@ The table below summarizes the exact prompting strategy used for each missing da
 | **3. 📍 Coordinates** | `Zero-Shot` | Straightforward retrieval of numerical values (Lat, Lon) for the locations. |
 | **4. 📷 Official image** | `Few-Shot` | Ensures the model follows the exact syntax and domain pattern required for media assets. |
 | **5. 🎟️ Entrance ticket** | `Chain-of-Thought` | Step-by-step analysis of standard rates, concessions, and free entry criteria. |
-| **7. 📞 Contact** | `Zero-Shot` | Quick and direct extraction of available telephone numbers and email addresses. |
+| **6. 📞 Contact** | `Zero-Shot` | Quick and direct extraction of available telephone numbers and email addresses. |
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
 
@@ -232,7 +232,7 @@ Below are the visual results obtained from the models showing their logical brea
 
 **Gemini**: its approach is factual and rigorous, capturing policy updates and exact administrative group rules for data accuracy.
 
-## 📞 7. Contacts
+## 📞 6. Contacts
 
 To find the official contact details, we used a **Zero-Shot** approach. We specifically designed the prompt to separate phone numbers from email addresses into distinct, clean sections. This layout was essential for us to easily read, copy, and organize the contact channels without mixing them up.
 
