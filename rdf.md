@@ -237,50 +237,59 @@ We gave ChatGPT the following information to generate the RDF triple:
 <img width="667" height="401" alt="image" src="https://github.com/user-attachments/assets/e49100e4-9513-4666-b2d2-35ce7c27cfa5" />
 
 ```turtle
-@prefix smapit: <http://dati.beniculturali.it/lodview/ontologies/smapit/> .
-@prefix l0: <http://dati.beniculturali.it/lodview/ontologies/l0/> .
-@prefix arco: <http://dati.beniculturali.it/lodview/ontologies/arco/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix arco:   <https://w3id.org/arco/ontology/arco/> .
+@prefix smapit: <https://w3id.org/italia/onto/SM/> .
+@prefix l0:     <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html>
-    smapit:hasOnlineContactPoint <http://example.org/contact/phone_general>,
-                                 <http://example.org/contact/phone_archive>,
-                                 <http://example.org/contact/email_info>,
-                                 <http://example.org/contact/email_prenotazioni>,
-                                 <http://example.org/contact/email_sacrestia>,
-                                 <http://example.org/contact/email_archivio_storico>,
-                                 <http://example.org/contact/email_archivio_musicale>,
+    a arco:CulturalInstituteOrSite ; 
+    smapit:hasOnlineContactPoint <http://example.org/contact/phone_general> ,
+                                 <http://example.org/contact/phone_archive> ,
+                                 <http://example.org/contact/email_info> ,
+                                 <http://example.org/contact/email_prenotazioni> ,
+                                 <http://example.org/contact/email_sacrestia> ,
+                                 <http://example.org/contact/email_archivio_storico> ,
+                                 <http://example.org/contact/email_archivio_musicale> ,
                                  <http://example.org/contact/website> .
 
 <http://example.org/contact/phone_general>
+    a smapit:OnlineContactPoint ;
     l0:name "General Information / Sacristy Phone" ;
     smapit:telephone "+39 051 231415" .
 
 <http://example.org/contact/phone_archive>
+    a smapit:OnlineContactPoint ;
     l0:name "Historical Archive Phone" ;
     smapit:telephone "+39 348 4414917" .
 
 <http://example.org/contact/email_info>
+    a smapit:OnlineContactPoint ;
     l0:name "General Information Email" ;
     smapit:email "info@basilicadisanpetronio.org" .
 
 <http://example.org/contact/email_prenotazioni>
+    a smapit:OnlineContactPoint ;
     l0:name "Group Visits and Bookings Email" ;
     smapit:email "prenotazioni@basilicadisanpetronio.org" .
 
 <http://example.org/contact/email_sacrestia>
+    a smapit:OnlineContactPoint ;
     l0:name "Sacristy Email (Liturgical Services)" ;
     smapit:email "sacrestia@basilicadisanpetronio.org" .
 
 <http://example.org/contact/email_archivio_storico>
+    a smapit:OnlineContactPoint ;
     l0:name "Historical Archive Email" ;
     smapit:email "archivio.storico@basilicadisanpetronio.org" .
 
 <http://example.org/contact/email_archivio_musicale>
+    a smapit:OnlineContactPoint ;
     l0:name "Musical Archive Email" ;
     smapit:email "archivio.musicale@basilicadisanpetronio.org" .
 
 <http://example.org/contact/website>
+    a smapit:OnlineContactPoint ;
     l0:name "Official Website" ;
-    smapit:website "https://www.basilicadisanpetronio.org" .
+    smapit:webSite "https://www.basilicadisanpetronio.org" .
 ```
