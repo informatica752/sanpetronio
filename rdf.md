@@ -197,31 +197,26 @@ Result:
                       <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_SchoolTicket> ,
                       <https://example.org/ticket/BasilicaSanPetronio_IndividualChapelVisit> .
 
-### FREE ENTRY (Main Basilica + Museum)
 <https://example.org/ticket/BasilicaSanPetronio_FreeEntry>
     rdf:type potapit:Ticket ;
     l0:name "Free Entry - Main Basilica and Museum Access" ;
     sm:price "0 EUR" .
 
-### FULL TICKET (Chapel Route)
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_FullTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - Full Ticket (Re Magi, San Sebastiano, San Vincenzo Ferrer)" ;
     sm:price "5 EUR" .
 
-### REDUCED TICKET (Chapel Route)
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_ReducedTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - Reduced Ticket (students 11–18, over 65, guided groups)" ;
     sm:price "3 EUR" .
 
-### SCHOOL GROUP TICKET
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_SchoolTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - School Groups Ticket" ;
     sm:price "2 EUR" .
 
-### INDIVIDUAL CHAPEL VISIT (SPECIAL ACCESS)
 <https://example.org/ticket/BasilicaSanPetronio_IndividualChapelVisit>
     rdf:type potapit:Ticket ;
     l0:name "Individual Chapel or Presbytery Visit (on reservation)" ;
