@@ -141,7 +141,7 @@ This step enriches the RDF description by defining not only the coordinates but 
     geo:lat "44.29346" ;
     geo:long "11.343126" .
 ```
-## 4. RDF for official image
+## 4. RDF for official image 📷
 
 The ArCo ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentativeImage`, whereas for non-official images, it relies on `foaf:depiction`.
 
