@@ -170,7 +170,7 @@ Chat GPT generated the following triple:
     a arco:CulturalInstituteOrSite ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Basilica_di_San_Petronio_-_Bologna.jpg> .
 ```
-## 5. RDF for entrance ticket
+## 5. RDF for entrance ticket 🎟️
 Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple to link all information about the entrance ticket to the Basilica of San Petronio:
 
 <img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
