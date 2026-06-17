@@ -44,7 +44,7 @@ We gave ChatGPT the following information to generate the RDF triple:
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `l0:description` | The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe. |
 
 ## 2. RDF Triple for wikidata link 🔗
-Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
+Through a **zero-shot** prompt, ChatGPT generated the RDF triples to connect the Basilica with its relative wikidata link:
 <img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
 
 Result:
