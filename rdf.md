@@ -29,6 +29,8 @@ Using a zero-shot prompting technique, we asked ChatGPT to create a RDF Triple:
 
 ```turtle
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     l0:description """The Gothic basilica of San Petronio in Bologna, dominating the southern side of Piazza Maggiore, represents one of the most ambitious expressions of late medieval civic architecture in Italy and an emblematic monument of the city's communal identity. Conceived in 1390 as a grandiose project to rival the major cathedrals of Christendom, its unfinished façade partly clad in pink and white marble and partly left in exposed brick visibly reflects the interrupted evolution of its construction and the historical tensions between civic and ecclesiastical power that shaped its long development.
