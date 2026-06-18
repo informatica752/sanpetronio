@@ -230,8 +230,6 @@ Below are the visual results obtained from the models showing their logical brea
 
 * **ChatGPT:** Focuses on a generalized, slightly outdated tourist overview. It leaves the panoramic terrace as a tentative option ("when available/seasonal") and claims no photo fee applies inside. It follows a standard sequence and concludes with an offer to map out a traveler's itinerary.
 * **Gemini:** Adopts a highly precise, administrative approach based on official, updated institutional rules. It correctly tracks recent operational changes, noting the definitive closure of the terrace, and captures the specific €2.00 internal photography permit rule.
-* **ChatGPT:** Simplifies the general entry guidelines by stating that accessing the main body of the basilica is entirely free for everyone without exception.
-* **Gemini:** Deepens data integrity by uncovering specific logistical rules for institutional groups. It highlights that while individual adults enter for free, formal school and youth groups are subject to a mandatory €2.00 entry fee just to access the basilica.
 
 **Overall** ⬇️:
 
