@@ -15,7 +15,7 @@ Our research centers on the **[Basilica di San Petronio di Bologna](https://it.w
 
 The goal of our study was to analyze how the Basilica di San Petronio is modeled in ArCo, pinpoint any missing data or structural gaps, and propose semantic enhancements. To accomplish this, we integrated advanced **[SPARQL querying](https://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** to generate new RDF triples aligned with [ArCo's official ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl).
 
-Ultimately, this work investigates how [AI-driven assistants](https://it.wikipedia.org/wiki/Assistente_virtuale)can optimize the representation of cultural heritage within structured datasets, overcoming existing data gaps and making cultural knowledge more accessible.
+Ultimately, this work investigates how [AI-driven assistants](https://it.wikipedia.org/wiki/Assistente_virtuale) can optimize the representation of cultural heritage within structured datasets, overcoming existing data gaps and making cultural knowledge more accessible.
 
 ## Key Objectives
 
