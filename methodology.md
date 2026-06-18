@@ -12,19 +12,19 @@ Our project focuses on the **[Basilica of San Petronio](https://it.wikipedia.org
 To see how San Petronio is represented in Italy's official cultural heritage data, we did a thorough check by querying the official **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**. This allowed us to explore exactly what information, details, and connections were already linked to the Basilica inside the national knowledge graph.
 
 ### 📊 3. Comparing Landmarks & Finding Data Gaps
-To get a clear picture of what was missing, we compared San Petronio's data with other major Italian churches. Since three of our team members are from Tuscany, we used the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as our main comparison point. While San Francesco had a beautiful, super-detailed network of connected data, San Petronio turned out to be almost completely empty, showing a huge difference in data quality.
+To get a clear picture of what was missing, we compared San Petronio's data with other major Italian churches. Since three of our team members are from Tuscany, we used the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as our main comparison point. While San Francesco had a detailed network of connected data, San Petronio turned out to be almost completely empty, showing a huge difference in data quantity.
 
 ### 🕵️ 4. Confirming the Gaps with SPARQL
 We didn't just stop at our first impression; we proved it technically. By writing and running targeted **SPARQL queries**, we got concrete, machine-readable proof that vital pieces of information—like historical details, timeline updates, and specific architectural connections for San Petronio—were completely missing from ArCo.
 
 ### 💡 5. Using LLMs to Find Missing Data
-To fill these data gaps, we brought Generative AI into our workflow. We experimented with different prompting techniques (**Zero-Shot, Few-Shot, and Chain-of-Thought**) using **[ChatGPT](https://it.wikipedia.org/wiki/ChatGPT)and [Gemini AI](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico))**. This helped us guide the AI assistants to extract accurate, high-quality historical facts about the Basilica.
+To fill these data gaps, we brought Generative AI into our workflow. We experimented with different prompting techniques (**Zero-Shot, Few-Shot, and Chain-of-Thought**) using **[ChatGPT](https://it.wikipedia.org/wiki/ChatGPT) and [Gemini AI](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico))**. This helped us guide the AI assistants to extract accurate, high-quality historical facts about the Basilica.
 
 ### ⚖️ 6. Fact-Checking & Quality Control
-Since AI models can sometimes make things up, we put the results from ChatGPT and Gemini through a strict cross-validation process. We double-checked all the historical facts against trusted academic sources, filtered out any mistakes or "hallucinations," and combined the best answers into one fully verified dataset.
+Since AI models can sometimes make things up, we put the results from ChatGPT and Gemini through a strict cross-validation process. We double-checked all the historical facts against trusted academic sources, filtered out any mistakes or "hallucinations," and chose the best answers.
 
 ### 📚 7. Writing the Code & Creating RDF Triples
-Next, we translated our newly verified historical text into machine-readable data for the Semantic Web. We mapped this information onto ArCo’s official structure to generate valid **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** file, creating a real, ready-to-use extension for the knowledge graph.
+Next, we translated our newly verified historical text into machine-readable data for the Semantic Web. We mapped this information onto ArCo’s official structure to generate valid **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** format, creating a real, ready-to-use extension for the knowledge graph.
 
 ### 🖥️ 8. Launching the Web Platform on GitHub
 To share our work with everyone, we built this **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** website. This platform hosts our entire step-by-step process, displays our comparison results, and serves as an open-science project to show how AI can help researchers enrich and update cultural heritage databases.
