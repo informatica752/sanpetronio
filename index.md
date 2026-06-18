@@ -20,7 +20,7 @@ Ultimately, this work investigates how [AI-driven assistants](https://it.wikiped
 ## Key Objectives
 
 * 🔍 **Analyze** the current representation of the Basilica di San Petronio within the ArCo dataset.
-* 📍 **Identify Gaps** in the existing data, such as missing geographical coordinates, architectural details, images, and metadata.
+* 📍 **Identify Gaps** in the existing data, such as missing geographical coordinates, description, images, and contacts.
 * 🧠 **Experiment** with various LLM prompting techniques (including Zero-Shot, Few-Shot, and Chain-of-Thought) for accurate RDF generation.
 * 🛠️ **Enrich the Dataset** by producing valid RDF triples using AI-based assistants compliant with ArCo's schema.
 * 📊 **Evaluate** the effectiveness and impact of incorporating LLMs into knowledge engineering workflows for cultural heritage.
@@ -28,8 +28,8 @@ Ultimately, this work investigates how [AI-driven assistants](https://it.wikiped
 ## Tools Used
 
 * **[ArCo Ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl)& [SPARQL Endpoint](https://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** (Data retrieval & modeling)
-* **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation) & **[Claude](https://claude.com/)**
-* **[GitHub](https://github.com/)** (Project hosting & version control)
+* **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation).
+* **[GitHub](https://github.com/)** (Creation of a website)
 
 ## Our Team
 
