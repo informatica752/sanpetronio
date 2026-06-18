@@ -5,15 +5,15 @@ title: 🏁 Conclusion
 
 # Project Conclusion
 
-This project allowed us to investigate how semantic web technologies and Large Language Models (LLMs) can cooperate to document cultural heritage. By studying the **Basilica di San Petronio** in Bologna and comparing its data structure with the **Basilica di San Francesco** in Arezzo within the ArCo knowledge graph, we identified several data gaps.
+This project allowed us to investigate how Semantic Web technologies and Large Language Models (LLMs) can cooperate to document cultural heritage. By studying the **Basilica di San Petronio** in Bologna and comparing its data structure with the **Basilica di San Francesco** in Arezzo within the ArCo Knowledge Graph, we identified several data gaps.
 
-During our work, we faced and resolved four main challenges related to data creation, AI validation, and web development.
+During our work, we faced and resolved three main challenges related to data creation, AI validation, and web development.
 
 ## ⚠️ Challenges & Solutions
 
 **1️⃣ Prompting LLMs for Complex RDF Triples (Contacts & Tickets)**
 
-•	**Challenge:** When we asked the AI to generate RDF triples for information with multiple values—specifically for the ticket types and contact details of the Basilica—the LLM struggled to structure the code correctly. It was difficult to find the right prompt to get a single subject connected to multiple objects using ArCo properties without creating errors.
+•	**Challenge:** When we asked the AI to generate RDF triples for information with multiple values, specifically for the ticket types and contact details of the Basilica, the LLM struggled to structure the code correctly. It was difficult to find the right prompt to get a single subject connected to multiple objects using ArCo properties without creating errors.
 
 •	**Solution:** We solved this by rewriting our instructions to the AI very clearly. We explicitly told the model how to handle multiple objects for a single predicate, using concrete examples. This helped the LLM generate correct Turtle code for both ticket prices and contact information.
 
@@ -25,7 +25,7 @@ During our work, we faced and resolved four main challenges related to data crea
 
 **3️⃣ Setting up and Linking the Website on GitHub Pages**
 
-•	**Challenge:** As absolute beginners in web development, creating the project website was a major obstacle. We found it very difficult at first to understand how to create a new GitHub repository from scratch, adapt existing Jekyll templates, and manually create all the navigation hyperlinks to connect the pages together.
+•	**Challenge:** As absolute beginners in web development, creating the project website was a central obstacle. We found it very difficult at first to understand how to create a new GitHub repository from scratch, adapt existing Jekyll templates, and manually create all the navigation hyperlinks to connect the pages together.
 
 •	**Solution:** We studied the basic documentation for GitHub and Jekyll step by step. We took an existing template, carefully analyzed its structure, and slowly learned how to modify the code. Through continuous team testing, we successfully created the repository and built a working navigation system between all our pages.
 
