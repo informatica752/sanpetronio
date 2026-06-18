@@ -65,7 +65,8 @@ Let's break this query down into simple pieces:
      Why it's used: It removes language tags (like @it or @en) so that the text can be correctly read by the `REGEX` filter.
 * **Why we do this:** The `i` flag stands for "case-Insensitive". When passed as a parameter inside the `REGEX` function, it instructs the query engine to search for this specific word in any case variation.
 
-By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first result.
+By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first result: 
+https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html 
 
 * **Results:** Only a limited amount of information about the Basilica is available on ArCo:
   * Name
@@ -166,7 +167,8 @@ LIMIT 100
 
 By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
 
-You can find the [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560).
+You can find the [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560): 
+https://dati.beniculturali.it/lodview/mibact/luoghi/resource/CulturalInstituteOrSite/20560.html
 
 ## Step 4: Comparing results – gaps identified
 
