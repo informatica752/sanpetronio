@@ -69,12 +69,12 @@ To speed up our project and avoid writing thousands of lines of code manually, w
 1. **Finding Missing Information:** The AI helped us scan and analyze historical books, architectural surveys, and documents to quickly find the data that was missing for San Petronio.
 2. **Creating Semantic Web Data:** Once the information was found, the AI acted as an intelligent translator. It extracted the key entities from the historical texts and automatically converted them into RDF triples.
 
-The LLM allowed us to bridge the gap between human narratives (stories and history) and machine-readable data (the Semantic Web) in a fraction of the time.A Large Language Model (LLM) is a type of neural network trained to understand and generate human language 
+The LLM allowed us to bridge the gap between human narratives (stories and history) and machine-readable data (the Semantic Web) in a fraction of the time. A Large Language Model (LLM) is a type of neural network trained to understand and generate human language.
 
 ### Models Selected for this Research
 To guarantee high syntactical accuracy and lower hallucination rates, we benchmarked and deployed the following state-of-the-art models:
-* **[GPT-4o (OpenAI)](https://chat.openai.com/):** Utilized for its exceptional compliance with complex JSON-LD and Turtle structural syntax constraints.
-* **[Gemini (Google)](https://gemini.google.com/?hl=it):** Deployed for its superior contextual understanding of long historical texts and nuanced architectural vocabulary.
+* **[GPT-4o (OpenAI)](https://chat.openai.com/):** Utilized for its exceptional compliance with complex structural syntax constraints.
+* **[Gemini (Google)](https://gemini.google.com/?hl=it):** Utilized for its advanced reasoning capabilities and code-generation precision.
 
 The models were explicitly restricted through system prompts to only map relations that could be grounded in verified academic inputs.
 
