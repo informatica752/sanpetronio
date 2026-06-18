@@ -42,7 +42,7 @@ To visually contextualize the scale of this data disparity, the table below high
 | **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) |
 | **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) |
 
-By leveraging the deep relational structure of the Basilica di San Francesco as our structural blueprint, our methodology aims to extract, model, and inject the missing historical and architectural knowledge into a newly engineered, independent Knowledge Graph dedicated to San Petronio.
+Using the data structure of the Basilica di San Francesco as our model, we extract and organize the historical and architectural information of San Petronio to build its own independent Knowledge Graph.
 
 ---
 
