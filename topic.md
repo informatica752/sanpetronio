@@ -26,7 +26,7 @@ We naturally assumed that a monument of San Petronio’s immense physical and hi
 
 When we ran our queries on **ArCo**, we were genuinely surprised by the striking difference between the two monuments:
 
-* **The San Francesco Benchmark:** The Basilica di San Francesco is exceptionally well-mapped. It features a dense network of connected data covering its architectural history, internal chapels, artwork, and structural evolution over the centuries.
+* **The San Francesco Benchmark:** The Basilica di San Francesco is exceptionally well-mapped. It features a dense network of connected data such as its architectural history, geographical coordinates and access information.
 * **The San Petronio "Empty Shell":** Despite its historical weight, San Petronio exists on ArCo almost entirely as a basic registry entry. It contains standard identification info but completely lacks granular historical data, coordinates, images, or semantic connections.
 
 Seeing this massive data gap is what motivated us to take action. This project is our attempt to use AI and Semantic Web tools to bridge this digital divide and finally give the Basilica di San Petronio the structured digital depth it deserves.
