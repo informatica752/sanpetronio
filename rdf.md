@@ -141,13 +141,14 @@ This step enriches the RDF description by defining not only the coordinates but 
 ```
 ## 4. RDF for official image 📷
 
-The ArCo ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentativeImage`, whereas for non-official images, it relies on `foaf:depiction`.
+The ArCo ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentative`, whereas for non-official images, it relies on `foaf:depiction`.
 
 Based on our previous research, there is currently no designated official image for the Basilica di San Petronio. Furthermore, when tasked with finding one, Gemini and ChatGPT provided completely different images, each identifying their respective choice as the most representative. 
 
 ➡️ Given this lack of official standardization, we have chosen to use the `foaf:depiction` predicate to attach our image.
 
-<img width="481" height="109" alt="image" src="https://github.com/user-attachments/assets/87b2d1f6-83f0-4d40-87e0-c46b6b3b6f9a" />
+<img width="843" height="135" alt="depiction" src="https://github.com/user-attachments/assets/22b3988f-8d8d-4101-b83b-3a05ba40f077" />
+
 
 Below the specifications used to ask Chat GPT to provide us the RDF triple:
 
