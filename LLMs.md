@@ -19,10 +19,10 @@ Below is the methodological overview of the three techniques applied across Chat
 
 ### 1. 🎯 Zero-Shot Prompting
 This technique involves making a direct request to the models **without providing any examples**. The models rely exclusively on the knowledge pre-trained within their parameters.
-* **Best for:** Simple linguistic tasks, summarization, or straightforward factual data retrieval.
+* **Best for:** Simple linguistic tasks, summarization, or straightforward factual [data retrieval](https://it.wikipedia.org/wiki/Information_retrieval).
 
 ### 2. 📋 Few-Shot Prompting
-This consists of providing the models with **one or more concrete examples** (input/output pairs) before asking the final question. This conditions the LLMs to strictly follow a specific style, length, or syntactic structure.
+This consists of providing the models with **one or more concrete examples** (input/output pairs) before asking the final question. This conditions the [LLMs](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) to strictly follow a specific style, length, or syntactic structure.
 * **Best for:** Output standardization, style matching and extracting structured media links.
 
 ### 3. 🧠 Chain-of-Thought (CoT)
@@ -33,7 +33,7 @@ This technique forces the models to **break down a complex problem and "think al
 
 ## 📊 Prompt Strategy Overview
 
-The table below summarizes the exact prompting strategy used for each missing data point across our LLM workflows:
+The table below summarizes the exact prompting strategy used for each missing data point across our [LLM](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) workflows:
 
 | Missing Data | Chosen Technique | Rationale & Objective |
 | :--- | :--- | :--- |
@@ -44,11 +44,11 @@ The table below summarizes the exact prompting strategy used for each missing da
 | **5. 🎟️ Entrance ticket** | `Chain-of-Thought` | Step-by-step analysis of standard rates, concessions, and free entry criteria. |
 | **7. 📞 Contact** | `Zero-Shot` | Quick and direct extraction of available telephone numbers and email addresses. |
 
-> ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
+> ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate [hallucinations](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)), especially regarding URLs and coordinates.
 
 ## 🏛️ 1. Basilica Description 
 
-Providing a description that fits highly specialized academic standards can be difficult for an AI. To test if the models could replicate a sophisticated, institutional tone, we used a **Few-Shot prompt**. We provided them with an official, high-level example from the ArCo (Architecture of Knowledge) portal and asked them to write a description of the Basilica matching that exact academic style, vocabulary, and flow.
+Providing a description that fits highly specialized academic standards can be difficult for an AI. To test if the models could replicate a sophisticated, institutional tone, we used a **Few-Shot prompt**. We provided them with an official, high-level example from the [ArCo (Architecture of Knowledge)](https://dati.beniculturali.it/arco/index.php) portal and asked them to write a description of the Basilica matching that exact academic style, vocabulary, and flow.
 
 ### Prompt Used 
 
@@ -83,7 +83,7 @@ Both models successfully abandoned their standard formatting to mimic the dense,
 
 ## 🌐 2. Wikidata Page 
 
-Verifying if a monument has an official Wikidata page is important for linking its data globally, but AIs can sometimes hallucinate or generate unnecessary links. To test if the models could correctly confirm its existence using only what they already knew, we used a **Zero-Shot prompt**. We simply asked them a direct "Yes" or "No" question without giving any examples or extra links, allowing us to see how accurate they are on their own.
+Verifying if a monument has an official [Wikidata](https://it.wikipedia.org/wiki/Wikidata) page is important for linking its data globally, but AIs can sometimes hallucinate or generate unnecessary links. To test if the models could correctly confirm its existence using only what they already knew, we used a **Zero-Shot prompt**. We simply asked them a direct "Yes" or "No" question without giving any examples or extra links, allowing us to see how accurate they are on their own.
 
 ### Prompt Used 
 ```text
@@ -103,7 +103,7 @@ The visual evidence below displays whether the models confirmed or denied the pr
 
 ✅ **LLMs comparison:**
 
-➡️ Both models correctly answered "Yes" and identified the exact Wikidata ID (**Q810103**), but they organized the data quite differently:
+➡️ Both models correctly answered "Yes" and identified the exact [Wikidata](https://it.wikipedia.org/wiki/Wikidata) ** ID (**Q810103**), but they organized the data quite differently:
 
 * **ChatGPT:** Provides a highly structured and detailed report. It extracts specific data points from Wikidata (like Name, Location, Religion, and Architectural identity) into a bulleted list, provides the direct URL link, and adds a final conclusion box.
 * **Gemini:** Gives a short, direct paragraph response. Instead of listing individual data points, it summarizes what kind of information can be found on the page (like history, coordinates, and dimensions) and relies on automated citation chips for links.
