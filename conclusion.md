@@ -5,7 +5,7 @@ title: 🏁 Conclusion
 
 # Project Conclusion
 
-This project allowed us to investigate how Semantic Web technologies and Large Language Models (LLMs) can cooperate to document cultural heritage. By studying the **Basilica di San Petronio** in Bologna and comparing its data structure with the **Basilica di San Francesco** in Arezzo within the ArCo Knowledge Graph, we identified several data gaps.
+This project allowed us to investigate how Semantic Web technologies and Large Language Models (LLMs) (https://en.wikipedia.org/wiki/Large_language_model) can cooperate to document cultural heritage. By studying the **Basilica di San Petronio** (https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in Bologna and comparing its data structure with the **Basilica di San Francesco** (https://it.wikipedia.org/wiki/Basilica_di_San_Francesco) in Arezzo within the ArCo Knowledge Graph, we identified several data gaps.
 
 During our work, we faced and resolved three main challenges related to data creation, AI validation, and web development.
 
