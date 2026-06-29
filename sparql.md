@@ -7,7 +7,7 @@ title: 🔍 SPARQL Queries
 
 ---
 
-This section hosts the queries used to evaluate the digital footprint of the **Basilica of San Petronio** (Bologna) within the **ArCo knowledge graph**, mapping out the data gaps identified during our research.
+This section hosts the queries used to evaluate the digital footprint of the **[Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** ([Bologna](https://it.wikipedia.org/wiki/Bologna)) within the **[ArCo knowledge graph](https://dati.cultura.gov.it/sparql)**, mapping out the data gaps identified during our research.
  
 ## 🛠️ Query Keywords
 
