@@ -46,4 +46,4 @@ Using the data structure of the Basilica di San Francesco as our model, we extra
 
 ---
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
