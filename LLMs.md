@@ -274,4 +274,4 @@ Below are the visual results obtained from the models showing the direct informa
 **Gemini**: keeps it simple for the general public, showing only the most important tourist lines and the official church registry email.
 
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
