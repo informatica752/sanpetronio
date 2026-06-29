@@ -26,7 +26,7 @@ This section hosts the queries used to evaluate the digital footprint of the **[
 
 ## 🔎 Step 1: Mapping the Baseline – Graph Discovery
 
-Before mapping any data extensions, it was essential to verify whether the **Basilica of San Petronio** was already recognized as an active semantic entity within national cultural open data.
+Before mapping any data extensions, it was essential to verify whether the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** was already recognized as an active semantic entity within national cultural open data.
 
 To achieve this, we executed a discovery script filtering the graph for our target monument:
 
@@ -75,9 +75,9 @@ https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSi
 
 ## 🔎 Step 2: Looking at All Basilicas in ArCo
 
-Our initial query revealed a surprising gap: despite its immense historical significance, San Petronio's digital record in ArCo was incredibly bare. This raised a crucial question: was this data scarce across the entire knowledge graph?
+Our initial query revealed a surprising gap: despite its immense historical significance, [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s digital record in [ArCo](https://dati.cultura.gov.it/sparql)was incredibly bare. This raised a crucial question: was this data scarce across the entire [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)?
 
-To answer this, we decided to investigate the general term "basilica" across the entire knowledge graph, extracting all connected properties to understand how this type of architecture is standardly categorized.
+To answer this, we decided to investigate the general term "[basilica](https://it.wikipedia.org/wiki/Basilica_(architettura_cristiana))" across the entire knowledge graph, extracting all connected properties to understand how this type of architecture is standardly categorized.
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -172,7 +172,7 @@ https://dati.beniculturali.it/lodview/mibact/luoghi/resource/CulturalInstituteOr
 
 ## Step 4: Comparing results – gaps identified
 
-By comparing the results of the queries above with the first query, we outlined six main gaps that should be added to enrich Basilica di San Petronio's record:
+By comparing the results of the queries above with the first query, we outlined six main gaps that should be added to enrich [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s record:
 
 1. 📝 Description
 2. 🔗 Wikidata link
@@ -228,7 +228,7 @@ It confirms the absence of any description.
 
 ### Query 2: Verifying the absence of the Wikidata link 🔗
 
-We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio:
+We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio):
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -248,7 +248,7 @@ WHERE {
 
 **Results:** ❌ Empty Dataset
 
-Despite being one of Italy's major heritage sites, the Basilica di San Petronio exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
+Despite being one of Italy's major heritage sites, the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
 
 ### Query 3: Verifying the absence of geographical coordinates 📍
 
@@ -274,11 +274,11 @@ LIMIT 5
 
 **Results:** ❌ Empty Table
 
-This confirms that ArCo lacks both direct coordinate triples and formal geometry instances for the Basilica di San Petronio.
+This confirms that ArCo lacks both direct coordinate triples and formal geometry instances for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio).
 
 ### Query 4: Verifying the absence of an official depiction 📷
 
-We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the Basilica di San Petronio in Bologna:
+We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in Bologna:
 
 ```sparql
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
