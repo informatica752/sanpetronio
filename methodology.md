@@ -88,4 +88,4 @@ The entire development, tracking, and publishing lifecycle of this project is ho
 
 ---
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
