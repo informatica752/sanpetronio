@@ -7,13 +7,13 @@ title: 💎 RDF Triples
 
 
 ### What are RDF Triples used for?
-In the traditional web, pages are linked together, but computers don't understand what the text inside them actually means. **RDF Triples solve this problem by giving meaning to data.** They allow search engines, AI models, and applications to automatically connect different pieces of information, cross-reference data from different websites (like linking Wikipedia with museum archives), and run complex smart searches instead of just looking for simple keywords.
+In the traditional web, pages are linked together, but computers don't understand what the text inside them actually means. **RDF Triples solve this problem by giving meaning to data.** They allow search engines, AI models, and applications to automatically connect different pieces of information, cross-reference data from different websites (like linking [Wikipedia](https://it.wikipedia.org/wiki/Pagina_principale) with museum archives), and run complex smart searches instead of just looking for simple keywords.
 
 ### How they work
 To do this, RDF Triples connect information using a basic three-word statement: **Subject - Predicate - Object**. 
 
 ### Our Goal
-The goal of this section is to produce structured semantic data designed to fill specific information gaps identified on the official **ArCo (Architecture of Knowledge)** portal regarding the Basilica of San Petronio. Instead of processing a pre-written description, we took the data provided by **ChatGPT** to resolve these gaps and asked the model to **generate** corresponding formal RDF triples.
+The goal of this section is to produce structured semantic data designed to fill specific information gaps identified on the official **[ArCo](https://dati.beniculturali.it/arco/index.php) (Architecture of Knowledge)** portal regarding the Basilica of San Petronio. Instead of processing a pre-written description, we took the data provided by **[ChatGPT](https://chatgpt.com/)** to resolve these gaps and asked the model to **generate** corresponding formal RDF triples.
 
 To find the most accurate and compliant data layout for ArCo's standards, we tested the model using three different prompting strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)**. 
 
@@ -21,10 +21,10 @@ The content that follows presents the **RDF triples** produced to complete the m
 
 ## 1. RDF Triple for description 📝
 
-Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
+Using a **zero-shot** prompting technique, we asked [ChatGPT](https://chatgpt.com/) to create a RDF Triple:
  <img width="802" height="1248" alt="image" src="https://github.com/user-attachments/assets/ef8c6e62-43a8-43a9-8ede-0b0e9cd6097b" />
 
-We gave ChatGPT the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -45,10 +45,10 @@ Particularly notable within the basilica is the monumental meridian line traced 
 ```
 
 ## 2. RDF Triple for wikidata link 🔗
-Through a **zero-shot** prompt, ChatGPT generated the RDF triples to connect the Basilica with its relative wikidata link:
+Through a **zero-shot** prompt, [ChatGPT](https://chatgpt.com/) generated the RDF triples to connect the Basilica with its relative wikidata link:
 <img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
 
-We gave ChatGPT the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -66,12 +66,12 @@ We gave ChatGPT the following information to generate the RDF triple:
 ```
 ## 3. RDF Triples for Geographical Coordinates 📍
 
-We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
+We prompted [ChatGPT](https://chatgpt.com/) to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
 #### Latitude generation
 <img width="365" height="310" alt="image" src="https://github.com/user-attachments/assets/2f36bb30-12be-4e3a-bbcc-446a6c13ca18" />
 
-We leveraged ChatGPT to transform the following details into an RDF triple:
+We leveraged [ChatGPT](https://chatgpt.com/) to transform the following details into an RDF triple:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -88,11 +88,11 @@ We leveraged ChatGPT to transform the following details into an RDF triple:
 
 #### Longitude generation
 
-Next, we asked Chat GPT to apply the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
+Next, we asked [Chat GPT](https://chatgpt.com/) to apply the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
-The RDF triple was generated via ChatGPT using the following input data:
+The RDF triple was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ We then requested the integration of both values into a single RDF description. 
 ```
 ### Final ArCo classification step
 
-Finally, we introduced the ArCo namespace prefix and manually added an explicit type declaration (`a arco:CulturalInstituteOrSite`) to semantically classify the resource within the ArCo ontology.
+Finally, we introduced the [ArCo](https://dati.beniculturali.it/arco/index.php) namespace prefix and manually added an explicit type declaration (`a arco:CulturalInstituteOrSite`) to semantically classify the resource within the [ArCo](https://dati.beniculturali.it/arco/index.php) ontology.
 
 This step enriches the RDF description by defining not only the coordinates but also the ontological nature of the entity.
 
@@ -141,22 +141,22 @@ This step enriches the RDF description by defining not only the coordinates but 
 ```
 ## 4. RDF for official image 📷
 
-The ArCo ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentative`, whereas for non-official images, it relies on `foaf:depiction`.
+The [ArCo](https://dati.beniculturali.it/arco/index.php) ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentative`, whereas for non-official images, it relies on `foaf:depiction`.
 
-Based on our previous research, there is currently no designated official image for the Basilica di San Petronio. Furthermore, when tasked with finding one, Gemini and ChatGPT provided completely different images, each identifying their respective choice as the most representative. 
+Based on our previous research, there is currently no designated official image for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio). Furthermore, when tasked with finding one, [Gemini](https://gemini.google.com/app?hl=it) and [ChatGPT](https://chatgpt.com/) provided completely different images, each identifying their respective choice as the most representative. 
 
 ➡️ Given this lack of official standardization, we have chosen to use the `foaf:depiction` predicate to attach our image.
 
 <img width="843" height="135" alt="depiction" src="https://github.com/user-attachments/assets/22b3988f-8d8d-4101-b83b-3a05ba40f077" />
 
 
-Below the specifications used to ask Chat GPT to provide us the RDF triple:
+Below the specifications used to ask [Chat GPT](https://chatgpt.com/) to provide us the RDF triple:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `foaf:depiction` | URL of the image found on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Basilica_di_San_Petronio_-_Bologna.jpg)|
 
-In order to interrogate Chat GPT we used the *zero shot prompting technique*
+In order to interrogate [Chat GPT](https://chatgpt.com/) we used the *zero shot prompting technique*
 
 <img width="420" height="211" alt="image" src="https://github.com/user-attachments/assets/6b8fd63a-2f09-4cbb-9bd5-287b7b64c5cc" />
 
@@ -170,11 +170,11 @@ In order to interrogate Chat GPT we used the *zero shot prompting technique*
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Basilica_di_San_Petronio_-_Bologna.jpg> .
 ```
 ## 5. RDF for entrance ticket 🎟️
-Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple to link all information about the entrance ticket to the Basilica of San Petronio:
+Using a **zero-shot** prompting technique, we asked [ChatGPT](https://chatgpt.com/) to create a RDF Triple to link all information about the entrance ticket to the [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio):
 
 <img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
 
-The RDF triple was generated via ChatGPT using the following input data:
+The RDF triple was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -238,11 +238,11 @@ The RDF triple was generated via ChatGPT using the following input data:
 ```
 
 ## 6. RDF for contact information 📞
-In order to add the missing information about contact details to the ArCo Knowledge Graph, we decided to use the **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
+In order to add the missing information about contact details to the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php), we decided to use the **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
 
 <img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
 
-We gave ChatGPT the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
