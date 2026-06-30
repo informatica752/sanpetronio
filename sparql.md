@@ -75,7 +75,7 @@ https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSi
 
 ## 🔎 Step 2: Looking at All Basilicas in ArCo
 
-Our initial query revealed a surprising gap: despite its immense historical significance, [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s digital record in [ArCo](https://dati.cultura.gov.it/sparql)was incredibly bare. This raised a crucial question: was this data scarce across the entire [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)?
+Our initial query revealed a surprising gap: despite its immense historical significance, [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s digital record in [ArCo](https://dati.cultura.gov.it/sparql) was incredibly bare. This raised a crucial question: was this data scarce across the entire [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)?
 
 To answer this, we decided to investigate the general term "[basilica](https://it.wikipedia.org/wiki/Basilica_(architettura_cristiana))" across the entire knowledge graph, extracting all connected properties to understand how this type of architecture is standardly categorized.
 
